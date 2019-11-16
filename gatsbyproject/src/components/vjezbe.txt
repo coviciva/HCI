@@ -1,0 +1,8 @@
+layout.modules.css, index.modules.css -> isti nazivi, koristi se lokalno
+
+PostGraphile - izgenerira graphql api 
+gatsby-source-pg
+
+page query - koristi se unutar "pages" mape, za sve sta nije pages npr "components" koristi se static hook
+
+instalacija plugina - na gatsby stranici npr: gatsby-source-filesystem

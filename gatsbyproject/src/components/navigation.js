@@ -4,12 +4,13 @@ import { Link } from "gatsby"
 
 const Navigation = ({MenuItems}) => {
     const menus = MenuItems.map(MenuItem => (
-        <li key={MenuItem.link}>
-            <Link to={MenuItem.link}>{MenuItem.text}</Link>
-            
-        </li>
+        
+        <div className="linksinheader">
+            <Link to={MenuItem.link} key={MenuItem.link}>{MenuItem.text}</Link>
+        </div>
+        
     ))
-    return <ul> {menus} </ul>
+    return <div className="polozajelemenata">{menus}</div>
 }
 
 export default Navigation
