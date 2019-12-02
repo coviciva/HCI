@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Header1 from "../components/header1"
+import Footer from "../components/footer"
 import SEO from "../components/SEO"
 
 
@@ -28,8 +29,8 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
     </div>
+    <Footer/>
     
-    <footer><h1>SPONZORI</h1></footer>
     
     </div>
   
