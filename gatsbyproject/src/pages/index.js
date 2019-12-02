@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
       
     </div>
     
-    
+    <footer><h1>SPONZORI</h1></footer>
     
     </div>
   

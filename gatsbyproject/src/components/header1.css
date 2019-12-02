@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header{
     background-color:rgb(41, 43, 44);
    
@@ -18,6 +24,11 @@
     padding-right: 35px;
     text-decoration: none;
 }
+
+.linksinheader:hover{
+    text-decoration: underline;
+}
+
 
 .mainphoto{
     position: relative;
@@ -64,3 +75,50 @@
     margin-right: 20px;
 	
 }
+
+footer {
+    height: 250px;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column; 
+}
+
+.rezultati{
+   /* position: absolute;*/
+    width: 35vw;
+    left: 56px;
+    top: 93px;
+    background: #DDDBDB;
+    border-radius: 5px;
+    margin: 17px 40px;
+    padding: 10px;
+}
+
+.rezultati p{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.raspored{
+    background-color: #DDDBDB;
+    width: 30vw;
+    height: 80px;
+    margin: 30px;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+}
+
+.vrijeme{
+    align-items: flex-end;
+}
+
