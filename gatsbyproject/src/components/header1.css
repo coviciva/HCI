@@ -5,42 +5,81 @@
 }
 
 .header{
-    background-color:rgb(41, 43, 44);
-   
-}
-
-.polozajelemenata{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 50px;
-    height: 60px;
-}
-
-.linksinheader > *{
     font-family: 'Calibri', 'Trebuchet MS', sans-serif;
-    color: white;
-    padding-right: 35px;
-    text-decoration: none;
+    background: rgb(20, 20, 20);
+    color:gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-left: 3em;
+    padding-right: 3em;
 }
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header a:hover{
+    text-decoration: underline;
+}
+
+.logoicon{
+    margin-bottom: 0.4em;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.linksinheader > *{ 
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    padding: 25px;
+    
+}
+
 
 .linksinheader:hover{
     text-decoration: underline;
 }
 
 
-.mainphoto{
+
+.signinbutton {
+    background-color:rgb(148, 216, 216); /* Green */
+    border: none;
+    color: black;
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    html {
+      font-size: 100%;
+    }
+  }
+
+.mainphoto-container{
     position: relative;
     text-align: center;
+    
 }
-.titleonphoto{
+.homephoto{
+    height: 80vh;
+}
+
+
+.textonphoto{
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(226, 221, 221);
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
     
 }
 .buttonmore{

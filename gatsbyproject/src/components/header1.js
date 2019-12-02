@@ -2,7 +2,7 @@ import React from "react"
 import Navigation from "../components/navigation"
 import "./header1.css"
 import { useStaticQuery, graphql } from "gatsby"
-
+import LogoLink from "../components/logo"
 
 
 const Header1 = props => {
@@ -23,10 +23,19 @@ const Header1 = props => {
 
     console.log(props)
     return (
-        <div className="header">
+      <div className="header">
+        
+        <LogoLink/>
+        
+        <div className="header-right">          
             <Navigation MenuItems = {data.site.siteMetadata.MenuItems}/>
-            {props.children}
+            <button type="button" className="signinbutton ">SIGN IN</button>
+            
         </div>
+      </div>
+      
+      
+        
     )
 }
 

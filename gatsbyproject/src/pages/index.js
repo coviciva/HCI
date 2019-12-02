@@ -9,20 +9,24 @@ const IndexPage = ({ data }) => {
   console.log(data)
   return (
     <div>
-      <Header1>
+    <Header1>
     <SEO title="PubQuiz"/>
+    
+    
     </Header1>
-    <div className="mainphoto">
-      <Img  fluid = {data.allFile.edges[0].node.childImageSharp.fluid}/>
-      <div className="titleonphoto">
+    {/*više slika*/}
+    <div className="mainphoto-container">
+    {data.allFile.edges.map(({node}) => (
+      <Img className="homephoto" key={node.id} fluid={node.childImageSharp.fluid}/>
+    ))}
+    <div className="textonphoto">
         <h1>PUB QUIZ: TINEL</h1>
         <h2>13/12/2019</h2>
         <div className="buttonsonphoto">
-          <button className="buttonmore">VIŠE</button>
+          <button className="buttonmore">SAZNAJ VIŠE</button>
           <button className="buttonprijavise"> PRIJAVI SE</button>
         </div>
       </div>
-      
     </div>
     
     <footer><h1>SPONZORI</h1></footer>
