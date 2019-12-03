@@ -154,6 +154,22 @@ footer h1 {
   display: flex;
   justify-content: space-between;
 }
+.slike_sponzora > *{
+    width: 250px;
+    height: 150px;
+}
+
+
+.slike_sponzora{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 500px;
+    padding-left: 120px;
+}
+
+
 
 .raspored h4 {
   padding-left: 10px;

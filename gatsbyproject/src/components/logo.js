@@ -5,6 +5,7 @@ import logo from "../assets/logo.svg"
 const LogoLink = () => (
     <Link to="/" sx={{ display: "flex", alignItems: "center" }}>
       <img className="logoicon"
+        alt ="logo"
         src={logo}
         sx={{
           height: "logo",
