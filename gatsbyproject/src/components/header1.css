@@ -154,19 +154,28 @@ footer h1 {
   display: flex;
   justify-content: space-between;
 }
+
 .slike_sponzora > *{
-    width: 250px;
+    width: 300px;
     height: 150px;
 }
 
 
-.slike_sponzora{
+/*.slike_sponzora{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
     height: 500px;
     padding-left: 120px;
+}*/
+
+.slike_sponzora{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+  padding: 40px;
 }
 
 
