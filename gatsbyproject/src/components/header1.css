@@ -87,6 +87,10 @@
   margin-top: 30px;
   margin-right: 20px;
 }
+.buttonmore:active {
+	position:relative;
+	top:1px;
+}
 
 .buttonprijavise {
   background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
@@ -101,6 +105,11 @@
   padding: 10px 30px;
   margin-top: 30px;
   margin-right: 20px;
+}
+
+.buttonprijavise:active {
+	position:relative;
+	top:1px;
 }
 
 footer {
@@ -156,7 +165,7 @@ footer h1 {
 }
 
 .slike_sponzora > *{
-    width: 300px;
+    width: 260px;
     height: 150px;
 }
 
@@ -179,7 +188,6 @@ footer h1 {
 }
 
 
-
 .raspored h4 {
   padding-left: 10px;
 }
@@ -188,4 +196,69 @@ footer h1 {
 .vrijeme {
   justify-self: flex-end;
   padding-right: 10px;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	
+	padding:5px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.onama{
+  margin: auto;
+  width: 50%;
+  padding-top: 40px;
+  font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.ciljevi1{
+  background: rgb(226, 226, 226);
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.ciljevi{
+  column-count: 2;
+}
+
+.ciljevi > * {
+  padding: 10px;
+}
+
+.upravniodbor{
+  display: flex;
+  justify-content: space-around;
+}
+
+.upravniodbor img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.osoba p{
+  margin: 0;
+}
+
+.osoba{
+  margin-bottom: 40px;
 }
