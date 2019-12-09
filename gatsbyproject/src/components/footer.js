@@ -24,7 +24,7 @@ const Footer = props => {
 `)
     return (
         <div className="sponzori_images">
-          <footer><h1>SPONZORI</h1></footer>
+          <footer><h1 className="sponzori">SPONZORI</h1></footer>
           <div className="slike_sponzora">
           {data.allFile.edges.map(({node}) => (
           <Img key={node.id} fluid={node.childImageSharp.fluid}/>

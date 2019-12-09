@@ -19,8 +19,8 @@ const IndexPage = ({ data }) => {
     <div className="mainphoto-container">
     <Img className="homephoto" fluid = {data.allFile.edges[0].node.childImageSharp.fluid}/>
     <div className="textonphoto">
-        <h1>PUB QUIZ: TINEL</h1>
-        <h2>13/12/2019</h2>
+        <p>PUB QUIZ: TINEL </p>
+        <p>13/12/2019 </p>
         <div className="buttonsonphoto">
           <button className="buttonmore">SAZNAJ VIŠE</button>
           <button className="buttonprijavise"> PRIJAVI SE</button>
