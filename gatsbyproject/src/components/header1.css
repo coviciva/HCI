@@ -245,7 +245,7 @@ footer h1 {
   column-count: 2;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
   .homephoto{
     height: 50vh;
     width: 375px;
@@ -320,4 +320,30 @@ footer h1 {
     padding-top: 5px;
     width: 85px;
   }
+}
+
+@media only screen and (max-width:560px) {
+
+  .slike_sponzora{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 15px;
+    padding-left: 35px;
+    padding-right: 50px;
+    padding-top: 0px;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+
+  .slike_sponzora{
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 15px;
+    padding-left: 35px;
+    padding-right: 50px;
+    padding-top: 0px;
+    }
+
 }
