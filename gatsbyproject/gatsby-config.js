@@ -24,6 +24,40 @@ module.exports = {
           link: "/about",
       }
   ],
+  LinkItems: [
+    {
+    
+        link: "http://www.pekarababic.hr/",
+    },
+    {
+
+        link: "https://www.fanta.com/",
+    },
+    {
+
+        link: "https://mallofsplit.hr/",
+    },
+    {
+
+        link: "https://pipi.com.hr/",
+    },
+    {
+
+        link: "https://www.scst.unist.hr/",
+    },
+    {
+
+      link: "https://slobodnadalmacija.hr/",
+    },
+    {
+
+    link: "https://tommy.hr/",
+    },
+    {
+
+      link: "https://www.uber.com/hr/hr/",
+    },
+],
     author: `@gatsbyjs`,
   },
   plugins: [
