@@ -7,7 +7,7 @@ import "./header1.css"
 const Footer = props => {
   const data = useStaticQuery(graphql`
   {
-    allFile(filter: {absolutePath: {regex: "//content/images/sponzori/"}}) {
+    allFile(filter: {absolutePath: {regex: "//content/images/sponzori/"}}, sort: {fields: base}) {
       edges {
         node {
           id

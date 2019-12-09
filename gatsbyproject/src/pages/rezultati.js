@@ -8,9 +8,15 @@ const RezultatiPage = () => <div>
 </Header1>
 
 <div id="container">
-<div className="rezultati">
-        <h4>PUB QUIZ: DOMAĆIN 10/10/2019</h4>
 
+
+<div className="rezultati">
+      <div className="cont"> 
+              <h4>PUB QUIZ: DOMAĆIN </h4>
+<div className="vrijeme">
+        <h4>10/10/2019</h4>
+</div>
+</div> 
         <p>1. MJESTO: TEAM A</p>
         <p>2. MJESTO: TEAM B</p>
         <p>3. MJESTO: TEAM C</p>
@@ -18,8 +24,12 @@ const RezultatiPage = () => <div>
 </div>
 
 <div className="rezultati">
-        <h4>PUB QUIZ: DOMAĆIN 10/10/2019</h4>
-
+      <div className="cont"> 
+              <h4>PUB QUIZ: RETRO </h4>
+<div className="vrijeme">
+        <h4>12/9/2019</h4>
+</div>
+</div> 
         <p>1. MJESTO: TEAM A</p>
         <p>2. MJESTO: TEAM B</p>
         <p>3. MJESTO: TEAM C</p>
@@ -27,8 +37,12 @@ const RezultatiPage = () => <div>
 </div>
 
 <div className="rezultati">
-        <h4>PUB QUIZ: DOMAĆIN 10/10/2019</h4>
-
+      <div className="cont"> 
+              <h4>PUB QUIZ: ACADEMIA </h4>
+<div className="vrijeme">
+        <h4>10/9/2019</h4>
+</div>
+</div> 
         <p>1. MJESTO: TEAM A</p>
         <p>2. MJESTO: TEAM B</p>
         <p>3. MJESTO: TEAM C</p>
@@ -36,8 +50,12 @@ const RezultatiPage = () => <div>
 </div>
 
 <div className="rezultati">
-        <h4>PUB QUIZ: DOMAĆIN 10/10/2019</h4>
-
+      <div className="cont"> 
+              <h4>PUB QUIZ: DREAMERS </h4>
+<div className="vrijeme">
+        <h4>3/9/2019</h4>
+</div>
+</div> 
         <p>1. MJESTO: TEAM A</p>
         <p>2. MJESTO: TEAM B</p>
         <p>3. MJESTO: TEAM C</p>
@@ -45,13 +63,19 @@ const RezultatiPage = () => <div>
 </div>
 
 <div className="rezultati">
-        <h4>PUB QUIZ: DOMAĆIN 10/10/2019</h4>
-
+      <div className="cont"> 
+              <h4>PUB QUIZ: TINEL </h4>
+<div className="vrijeme">
+        <h4>25/8/2019</h4>
+</div>
+</div> 
         <p>1. MJESTO: TEAM A</p>
         <p>2. MJESTO: TEAM B</p>
         <p>3. MJESTO: TEAM C</p>
     
 </div>
+
+
 
 
 

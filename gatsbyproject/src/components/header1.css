@@ -72,12 +72,9 @@
   color: rgb(226, 221, 221);
   font-family: "Calibri", "Trebuchet MS", sans-serif;
 }
+
 .buttonmore {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-  background-color: #ededed;
-  border-radius: 9px;
-  border: 2px solid #727171;
   display: inline-block;
   cursor: pointer;
   font-family: Arial;
@@ -86,6 +83,18 @@
   padding: 10px 50px;
   margin-top: 30px;
   margin-right: 20px;
+  border-radius: 9px;
+  background-color: white;
+  color: black;
+  border: 2px solid #727171;
+  transition-duration: 0.4s;
+}
+
+.buttonmore:hover {
+  background-color: gray;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonprijavise {
@@ -103,6 +112,12 @@
   margin-right: 20px;
 }
 
+.buttonprijavise:hover {
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 footer {
   height: 120px;
   text-align: center;
@@ -118,7 +133,6 @@ footer h1 {
 }
 
 .rezultati {
-  /* position: absolute;*/
   width: 35vw;
   left: 56px;
   top: 93px;
@@ -135,7 +149,6 @@ footer h1 {
 
 .maindiv {
   display: flex;
-  /* flex-direction: column;*/
   align-items: center;
   justify-content: center;
 }
@@ -155,22 +168,12 @@ footer h1 {
   justify-content: space-between;
 }
 
-.slike_sponzora > *{
-    width: 300px;
-    height: 150px;
+.slike_sponzora > * {
+  width: 260px;
+  height: 150px;
 }
 
-
-/*.slike_sponzora{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    height: 500px;
-    padding-left: 120px;
-}*/
-
-.slike_sponzora{
+.slike_sponzora {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 10px;
@@ -178,14 +181,16 @@ footer h1 {
   padding: 40px;
 }
 
-
-
 .raspored h4 {
   padding-left: 10px;
 }
 
-
 .vrijeme {
   justify-self: flex-end;
   padding-right: 10px;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
 }
