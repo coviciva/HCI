@@ -248,7 +248,7 @@ footer h1 {
 @media only screen and (max-width: 400px) {
   .homephoto{
     height: 50vh;
-    width: 360px;
+    width: 375px;
 
   }
   .buttonsonphoto{
@@ -297,7 +297,7 @@ footer h1 {
 
   
   footer{
-    width: 360px;
+    width: 375px;
     height: 100px;
   }
 
@@ -311,7 +311,7 @@ footer h1 {
 
   .header{
     padding: 5px;
-    width: 360px;
+    width: 375px;
   }
 
   .logoicon {
