@@ -40,7 +40,7 @@
 
 .myButton {
   /*background-color: rgb(148, 216, 216); /* Green */
-  background-color:#d62e00;
+  background-color: #d62e00;
   border: none;
   color: black;
   padding: 7px 25px;
@@ -53,8 +53,8 @@
   transition-duration: 0.4s;
 }
 
-.myButton:hover{
-  color:white;
+.myButton:hover {
+  color: white;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -83,7 +83,7 @@
   color: rgb(226, 221, 221);
   font-family: "Calibri", "Trebuchet MS", sans-serif;
 }
-.textonphoto p{
+.textonphoto p {
   padding-bottom: 20px;
 }
 
@@ -99,7 +99,7 @@
   margin-right: 20px;
   border-radius: 9px;
   background-color: Transparent;
-  color:white;
+  color: white;
   border: 1px solid white;
   transition-duration: 0.4s;
 }
@@ -111,8 +111,8 @@
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .buttonmore:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 .buttonprijavise {
@@ -132,7 +132,8 @@
 
 .buttonprijavise:hover {
   color: white;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {
@@ -147,6 +148,8 @@ footer h1 {
 #container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .rezultati {
@@ -212,104 +215,100 @@ footer h1 {
   justify-content: space-between;
 }
 
-.osoba{
+.osoba {
   margin-bottom: 40px;
 }
-.osoba p{
+.osoba p {
   margin-bottom: 0.3rem;
 }
-.onama{
+.onama {
   margin: auto;
   width: 50%;
-  font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: "Calibri", "Trebuchet MS", sans-serif;
   padding-top: 20px;
 }
 
-.upravniodbor{
+.upravniodbor {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
 }
-.upravniodbor img{
+.upravniodbor img {
   border-radius: 50%;
   width: 130px;
   height: 130px;
 }
-.naslovciljevi{
+.naslovciljevi {
   padding-top: 30px;
 }
-.ciljevi1{
+.ciljevi1 {
   padding-bottom: 40px;
 }
-.ciljevi{
+.ciljevi {
   column-count: 2;
 }
 
 @media only screen and (max-width: 400px) {
-  .homephoto{
+  .homephoto {
     height: 50vh;
     width: 375px;
-
   }
-  .buttonsonphoto{
+  .buttonsonphoto {
     display: flex;
     width: 270px;
     padding-left: 25px;
   }
 
-  .textonphoto{
+  .textonphoto {
     left: 50%;
     top: 55%;
     font-size: 30px;
   }
 
-  .buttonsonphoto > *{
+  .buttonsonphoto > * {
     font-size: 12px;
     padding: 6px;
   }
-  
-  .buttonprijavise{
+
+  .buttonprijavise {
     padding-left: 13px;
     padding-right: 13px;
   }
 
-  
-  .sponzori{
+  .sponzori {
     padding: 15px;
     margin-left: -10px;
     margin-bottom: 0;
-
   }
 
-  .slike_sponzora{
+  .slike_sponzora {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 15px;
     padding-left: 35px;
     padding-right: 50px;
     padding-top: 0px;
-    }
-
-    .slike_sponzora > *{
-      width: 100px;
-      height: 40px;
   }
 
-  
-  footer{
+  .slike_sponzora > * {
+    width: 100px;
+    height: 40px;
+  }
+
+  footer {
     width: 375px;
     height: 100px;
   }
 
-  .linksinheader{
+  .linksinheader {
     display: none;
   }
 
-  .myButton{
+  .myButton {
     display: none;
   }
 
-  .header{
+  .header {
     padding: 5px;
     width: 375px;
   }
@@ -319,5 +318,21 @@ footer h1 {
     padding-left: 10px;
     padding-top: 5px;
     width: 85px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .raspored,
+  .rezultati {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .upravniodbor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 30px;
   }
 }
