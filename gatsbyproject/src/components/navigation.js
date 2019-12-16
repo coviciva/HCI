@@ -5,7 +5,7 @@ import "./header1.css"
 const Navigation = ({MenuItems}) => {
     const menus = MenuItems.map(MenuItem => (
         
-        <Link to={MenuItem.link} key={MenuItem.link}>{MenuItem.text}</Link>
+        <Link to={MenuItem.link} key={MenuItem.link} className="linkovi">{MenuItem.text}</Link>
         
     ))
     return <div className="linksinheader">{menus}</div>

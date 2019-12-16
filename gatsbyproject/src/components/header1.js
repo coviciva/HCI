@@ -30,7 +30,7 @@ const Header1 = props => {
         <div className="header-right">          
             <Navigation MenuItems = {data.site.siteMetadata.MenuItems}/>
             <button type="button" className="myButton">SIGN IN</button>
-            
+            <div className="hamburger">III</div>
         </div>
       </div>
       

@@ -59,6 +59,13 @@
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media only screen and (min-width: 801px) {
+  .hamburger{
+    display: none;
+  }
+   
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -290,6 +297,7 @@ footer h1 {
     padding-top: 0px;
   }
 
+
   .slike_sponzora > * {
     width: 100px;
     height: 40px;
@@ -336,3 +344,58 @@ footer h1 {
     padding-top: 30px;
   }
 }
+
+
+
+/* grid sponzora mora imat 2 stupca*/
+@media only screen and (max-width:885px) {
+  .slike_sponzora{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 15px;
+    padding-left: 35px;
+    padding-right: 50px;
+    padding-top: 0px;
+    }
+
+}
+
+/* grid sponzora mora imat 1 stupac - ili smanjit slike i stavit ih u stupce*/
+@media only screen and (max-width:606px) {
+  .slike_sponzora{
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 15px;
+    padding-left: 35px;
+    padding-right: 50px;
+    padding-top: 0px;
+    }
+
+}
+
+@media only screen and (max-width:910px) {
+  .linkovi{
+    font-size: 16px;
+  }
+
+  .logoicon{
+    width: 90px;
+    height: 90px;
+  }
+  .header{
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+/*POJAVLJIVA SE HAMBURGER*/
+@media only screen and (max-width: 800px) {
+  .linksinheader{
+    display: none;
+  }
+   .header{
+     padding-left: 5px;
+   }
+}
+
