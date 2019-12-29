@@ -9,7 +9,7 @@ const Blog = () => (
     <Header1>
       <SEO title="Blog" />
     </Header1>
-    <h2>Blog</h2>
+
     <StaticQuery
       query={PagesQuery}
       render={data => {
