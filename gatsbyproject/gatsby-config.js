@@ -4,60 +4,52 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     MenuItems: [
       {
-          text: "Naslovnica",
-          link: "/",
+        text: "Naslovnica",
+        link: "/",
       },
       {
-          text: "Raspored",
-          link: "/raspored",
+        text: "Raspored",
+        link: "/raspored",
       },
       {
-          text: "Rezultati",
-          link: "/rezultati",
+        text: "Rezultati",
+        link: "/rezultati",
       },
       {
-          text: "Blog",
-          link: "/blog",
+        text: "Blog",
+        link: "/blog",
       },
       {
-          text: "O nama",
-          link: "/about",
-      }
-  ],
-  LinkItems: [
-    {
-    
+        text: "O nama",
+        link: "/about",
+      },
+    ],
+    LinkItems: [
+      {
         link: "http://www.pekarababic.hr/",
-    },
-    {
-
+      },
+      {
         link: "https://www.fanta.com/",
-    },
-    {
-
+      },
+      {
         link: "https://mallofsplit.hr/",
-    },
-    {
-
+      },
+      {
         link: "https://pipi.com.hr/",
-    },
-    {
-
+      },
+      {
         link: "https://www.scst.unist.hr/",
-    },
-    {
-
-      link: "https://slobodnadalmacija.hr/",
-    },
-    {
-
-    link: "https://tommy.hr/",
-    },
-    {
-
-      link: "https://www.uber.com/hr/hr/",
-    },
-],
+      },
+      {
+        link: "https://slobodnadalmacija.hr/",
+      },
+      {
+        link: "https://tommy.hr/",
+      },
+      {
+        link: "https://www.uber.com/hr/hr/",
+      },
+    ],
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -68,18 +60,29 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-      
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `content`,
-          path: `${__dirname}/content`,
-        },
-       
-
-       
-        
-        
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

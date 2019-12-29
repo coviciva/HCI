@@ -1,0 +1,15 @@
+.Cards {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.CardBody {
+  background-color: lightslategray;
+  padding: 30px;
+  width: 450px;
+}
+
+.CardTitle {
+  font-weight: bold;
+  color: white;
+}
