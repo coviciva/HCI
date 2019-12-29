@@ -7,7 +7,7 @@ const Footer = props => {
   const data = useStaticQuery(graphql`
     {
       allFile(
-        filter: { absolutePath: { regex: "//content/images/odbor/" } }
+        filter: { absolutePath: { regex: "//content/images/sponzori/" } }
         sort: { fields: base }
       ) {
         edges {
