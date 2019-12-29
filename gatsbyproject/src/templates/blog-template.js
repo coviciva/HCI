@@ -1,4 +1,5 @@
 import React from "react"
+
 import { graphql } from "gatsby"
 import Header1 from "../components/header1"
 
@@ -11,12 +12,18 @@ export default function Template({
     <div className="blog-post-container">
       <Header1></Header1>
       <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <h2>{frontmatter.title}</h2>
+        <div className="datum">
+          <span>{frontmatter.date}</span>
+        </div>
+
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        <div className="autor">
+          <span>{frontmatter.author}</span>
+        </div>
       </div>
     </div>
   )
@@ -26,9 +33,10 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
         title
+        date(formatString: "MM DD YYYY")
+        author
+        path
       }
     }
   }
