@@ -3,6 +3,7 @@ title: "OTVORENE PRIJAVE ZA PUB QUIZ: DREAMERS"
 date: 2019-15-12
 author: "Julija Vagić"
 path: "/cetvrti-post"
+image: ../../images/postphoto2.jpg
 ---
 
 U subotu, 28.12.2019, u kafiću Retro, Nogometne ikone organiziraju sportski pub quiz. Prijave su otvorene.

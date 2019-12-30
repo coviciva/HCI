@@ -3,6 +3,7 @@ title: "OTVORENE PRIJAVE ZA PUB QUIZ: DOMAĆIN"
 date: 2019-01-11
 author: "Luka Mileta"
 path: "/first-post"
+image: ../../images/postphoto.jpg
 ---
 
 Otvorene su prijave za studentski pub quiz koji će se održati 10.11.2019. godine u svima vam poznatom kafiću Domaćin. Kviz počinje u 20:30.

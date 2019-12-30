@@ -4,11 +4,30 @@
   margin-top: 30px;
 }
 .CardBody {
+  font-family: "Calibri", "Trebuchet MS", sans-serif;
+  position: relative;
+  text-align: center;
   background-color: lightslategray;
-  padding: 30px;
+  padding: 0px;
   width: 450px;
 }
-
+.card-image {
+  width: 450px;
+  height: 330px;
+}
+.text-on-card {
+  width: 450px;
+  height: 200px;
+  position: absolute;
+  text-decoration: none;
+  font-size: 28px;
+  color: white;
+  top: 20%;
+}
+.text-on-card a {
+  text-decoration: none;
+  color: white;
+}
 .CardTitle {
   font-weight: bold;
   color: white;
@@ -16,4 +35,21 @@
 
 .blog-post {
   margin: auto;
+}
+.CardMore {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-top: 100px;
+  margin-right: 20px;
+  border-radius: 9px;
+  background-color: Transparent;
+  color: white;
+  border: 1px solid white;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
