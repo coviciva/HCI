@@ -23,6 +23,7 @@ const Blog = () => (
                 date={node.frontmatter.date}
                 body={node.frontmatter.body}
                 fluid={node.frontmatter.image.childImageSharp.fluid}
+                tags={node.frontmatter.tags}
               />
             ))}
           </div>
@@ -43,6 +44,7 @@ const PagesQuery = graphql`
             date(formatString: "MM DD YYYY")
             author
             path
+            tags
             image {
               childImageSharp {
                 fluid {

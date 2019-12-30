@@ -17,7 +17,7 @@
 }
 .text-on-card {
   width: 450px;
-  height: 200px;
+  height: 270px;
   position: absolute;
   text-decoration: none;
   font-size: 28px;
@@ -52,4 +52,12 @@
   border: 1px solid white;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
+}
+
+.tags {
+  font-size: 12px;
+}
+
+ul {
+  list-style-type: none;
 }

@@ -3,7 +3,18 @@ import { Link } from "gatsby"
 import "./posts.css"
 import Img from "gatsby-image"
 
-const Post = ({ title, author, path, date, body, fluid }) => {
+const slugify = function(text) {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, "-") // Replace spaces with -
+    .replace(/[^\w-]+/g, "") // Remove all non-word chars
+    .replace(/--+/g, "-") // Replace multiple - with single -
+    .replace(/^-+/, "") // Trim - from start of text
+    .replace(/-+$/, "") // Trim - from end of text
+}
+
+const Post = ({ title, author, path, date, body, fluid, tags }) => {
   return (
     <div className="Cards">
       <div className="CardBody">
@@ -17,6 +28,13 @@ const Post = ({ title, author, path, date, body, fluid }) => {
           <Link to={path} className="CardMore">
             Saznaj vise
           </Link>
+          <ul className="tags">
+            {tags.map(tag => (
+              <li>
+                <Link to={`/tag/${slugify(tag)}`}>#{tag}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

@@ -4,6 +4,8 @@ date: 2019-15-12
 author: "Julija Vagić"
 path: "/cetvrti-post"
 image: ../../images/postphoto2.jpg
+tags:
+  - prijave
 ---
 
 U subotu, 28.12.2019, u kafiću Retro, Nogometne ikone organiziraju sportski pub quiz. Prijave su otvorene.
