@@ -1,6 +1,6 @@
 ---
 title: "PRIJAVE ZA OPĆI PUB QUIZ: MALA KAVANA"
-date: 2019-07-08
+date: 2019-07-03
 author: "Julija Vagić"
 path: "/deseti-post"
 image: ../../images/postphoto2.jpg

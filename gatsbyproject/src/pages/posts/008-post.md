@@ -1,6 +1,6 @@
 ---
 title: "Svjetsko kvizaško prvenstvo"
-date: 2019-01-06
+date: 2019-05-20
 author: "Josip Mileta"
 path: "/osmi-post"
 image: ../../images/postphoto2.jpg

@@ -1,5 +1,5 @@
 ---
-title: "HUMANITARNA AKCIJA"
+title: "HUMANITARNA AKCIJA: MALI DOM AFRIKA"
 date: 2019-02-11
 author: "Luka Mileta"
 path: "/second-post"

@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import Header1 from "../components/header1"
 import Footer from "../components/footer"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 const IndexPage = ({ data }) => {
   console.log(data)
@@ -20,9 +21,11 @@ const IndexPage = ({ data }) => {
         />
         <div className="textonphoto">
           <p>PUB QUIZ: TINEL </p>
-          <p>13/12/2019 </p>
+          <p>28/12/2019 </p>
           <div className="buttonsonphoto">
-            <button className="buttonmore">SAZNAJ VIŠE</button>
+            <Link to="/cetvrti-post">
+              <button className="buttonmore">SAZNAJ VIŠE</button>
+            </Link>
             <button className="buttonprijavise"> PRIJAVI SE</button>
           </div>
         </div>

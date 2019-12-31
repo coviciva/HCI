@@ -1,6 +1,6 @@
 ---
 title: "15. Europsko prvenstvo - Sofija 2019."
-date: 2019-16-12
+date: 2019-11-12
 author: "Julija Vagić"
 path: "/peti-post"
 image: ../../images/postphoto2.jpg

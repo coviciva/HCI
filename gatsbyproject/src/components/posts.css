@@ -61,3 +61,13 @@
 ul {
   list-style-type: none;
 }
+
+.svi-postovi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  margin-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

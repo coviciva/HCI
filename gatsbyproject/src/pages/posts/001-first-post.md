@@ -1,6 +1,6 @@
 ---
 title: "OTVORENE PRIJAVE ZA PUB QUIZ: DOMAĆIN"
-date: 2019-01-11
+date: 2019-11-5
 author: "Luka Mileta"
 path: "/first-post"
 image: ../../images/postphoto.jpg

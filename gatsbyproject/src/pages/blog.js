@@ -14,7 +14,7 @@ const Blog = () => (
       query={PagesQuery}
       render={data => {
         return (
-          <div>
+          <div className="svi-postovi">
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <Post
                 title={node.frontmatter.title}
@@ -41,7 +41,7 @@ const PagesQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MM DD YYYY")
+            date(formatString: "YYYY MM DD")
             author
             path
             tags
