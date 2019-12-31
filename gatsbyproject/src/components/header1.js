@@ -50,9 +50,9 @@ const Header1 = props => {
   console.log(props)
   return (
     <div className="header">
-      <NetlifyIdentity />
+      
       <LogoLink />
-
+      <NetlifyIdentity />
       <div className="header-right">
         <Navigation MenuItems={data.site.siteMetadata.MenuItems} />
         <button
