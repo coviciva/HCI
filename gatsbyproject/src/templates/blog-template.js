@@ -28,15 +28,15 @@ export default function Template({
     </div>
   )
 }
+
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        title
         date(formatString: "MM DD YYYY")
-        author
         path
+        title
       }
     }
   }
