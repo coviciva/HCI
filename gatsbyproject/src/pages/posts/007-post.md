@@ -2,7 +2,6 @@
 title: "Quizzing 101 - rezultati"
 date: 2019-04-10
 author: "Josip Mileta"
-path: "/sedmi-post"
 image: ../../images/postphoto.jpg
 tags:
   - rezultati

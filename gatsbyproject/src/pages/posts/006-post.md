@@ -1,8 +1,7 @@
 ---
-title: "Ekipno državno prvenstvo u kvizu #6"
+title: "Ekipno drzavno prvenstvo u kvizu #6"
 date: 2019-03-05
 author: "Josip Mileta"
-path: "/sesti-post"
 image: ../../images/postphoto.jpg
 tags:
   - pravila

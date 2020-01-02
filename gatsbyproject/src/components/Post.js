@@ -14,24 +14,24 @@ const slugify = function(text) {
     .replace(/-+$/, "") // Trim - from end of text
 }
 
-const Post = ({ title, author, path, date, body, fluid, tags }) => {
+const Post = ({ title, author, slug, date, body, fluid, tags }) => {
   return (
     <div className="Cards">
       <div className="CardBody">
         <Img className="card-image" fluid={fluid} />
         <div className="text-on-card">
           <div className="CardTitle">
-            <Link to={path}>{title}</Link>
+            <Link to={slug}>{title}</Link>
           </div>
 
           {body}
-          <Link to={path} className="CardMore">
+          <Link to={slug} className="CardMore">
             Saznaj vise
           </Link>
           <ul className="tags">
             {tags.map(tag => (
-              <li>
-                <Link to={`/tag/${slugify(tag)}`}>#{tag}</Link>
+              <li key={tag}>
+                <Link to={`/tags/${slugify(tag)}`}>#{tag}</Link>
               </li>
             ))}
           </ul>

@@ -1,8 +1,7 @@
 ---
-title: "PRIJAVE ZA SPORTSKI PUB QUIZ: NOGOMETNE IKONE"
+title: "PRIJAVE ZA PUB QUIZ: NOGOMETNE IKONE"
 date: 2019-12-22
 author: "Josip Mileta"
-path: "/third-post"
 image: ../../images/postphoto.jpg
 tags:
   - prijave

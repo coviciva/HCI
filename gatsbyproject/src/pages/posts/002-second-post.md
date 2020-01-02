@@ -1,8 +1,7 @@
 ---
-title: "HUMANITARNA AKCIJA: MALI DOM AFRIKA"
+title: "HUMANITARNA AKCIJA: MALI DOM"
 date: 2019-02-11
 author: "Luka Mileta"
-path: "/second-post"
 image: ../../images/postphoto2.jpg
 tags:
   - humanitarna akcija

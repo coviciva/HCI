@@ -1,8 +1,7 @@
 ---
-title: "REZULTATI PUB QUIZA: DOMAĆIN"
+title: "REZULTATI PUB QUIZA: DOMACIN"
 date: 2019-01-13
 author: "Luka Mileta"
-path: "/dvanaseti-post"
 image: ../../images/postphoto.jpg
 tags:
   - rezultati

@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
           <p>PUB QUIZ: TINEL </p>
           <p>28/12/2019 </p>
           <div className="buttonsonphoto">
-            <Link to="/cetvrti-post">
+            <Link to="/prijave-za-pub-quiz-tinel">
               <button className="buttonmore">SAZNAJ VIŠE</button>
             </Link>
             <button className="buttonprijavise"> PRIJAVI SE</button>

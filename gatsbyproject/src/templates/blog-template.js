@@ -6,15 +6,16 @@ import Header1 from "../components/header1"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
+  const post = data.markdownRemark.frontmatter
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
     <div className="blog-post-container">
       <Header1></Header1>
       <div className="blog-post">
-        <h2>{frontmatter.title}</h2>
+        <h2>{post.title}</h2>
         <div className="datum">
-          <span>{frontmatter.date}</span>
+          <span>{post.date}</span>
         </div>
 
         <div
@@ -22,7 +23,7 @@ export default function Template({
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <div className="autor">
-          <span>{frontmatter.author}</span>
+          <span>{post.author}</span>
         </div>
       </div>
     </div>
@@ -30,13 +31,22 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query blogPostBySlug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
       html
       frontmatter {
-        date(formatString: "MM DD YYYY")
-        path
         title
+        author
+        date(formatString: "MM DD YYYY")
+        tags
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

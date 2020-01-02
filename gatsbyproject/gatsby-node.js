@@ -1,40 +1,95 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
+const slugify = function(text) {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, "-") // Replace spaces with -
+    .replace(/[^\w-]+/g, "") // Remove all non-word chars
+    .replace(/--+/g, "-") // Replace multiple - with single -
+    .replace(/^-+/, "") // Trim - from start of text
+    .replace(/-+$/, "") // Trim - from end of text
+}
 const path = require(`path`)
-exports.createPages = async ({ actions, graphql, reporter }) => {
+const _ = require(`lodash`)
+
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === "MarkdownRemark") {
+    const slugfromtitle = slugify(node.frontmatter.title)
+
+    createNodeField({
+      node,
+      name: "slug",
+      value: slugfromtitle,
+    })
+  }
+}
+
+exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blog-template.js`)
-  const result = await graphql(`
+
+  const templates = {
+    singlePostTemplate: path.resolve("src/templates/blog-template.js"),
+    tagsPageTemplate: path.resolve("src/templates/tags.js"),
+    taggedPosts: path.resolve("src/templates/tagged-posts.js"),
+  }
+  return graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMarkdownRemark {
         edges {
           node {
             frontmatter {
-              path
+              author
+              tags
+            }
+            fields {
+              slug
             }
           }
         }
       }
     }
-  `)
-  // Handle errors
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
-  }
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  `).then(res => {
+    if (res.errors) return Promise.reject(res.errors)
+    const posts = res.data.allMarkdownRemark.edges
+
+    posts.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: templates.singlePostTemplate,
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    })
+    let tags = []
+    _.each(posts, edge => {
+      if (_.get(edge, "node.frontmatter.tags")) {
+        tags = tags.concat(edge.node.frontmatter.tags)
+      }
+    })
+    let tagPostCounts = {}
+    tags.forEach(tag => {
+      tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1
+    })
+    tags = _.uniq(tags)
+
     createPage({
-      path: node.frontmatter.path,
-      component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      path: "/tags",
+      component: templates.tagsPageTemplate,
+      context: {
+        tags,
+        tagPostCounts,
+      },
+    })
+
+    tags.forEach(tag => {
+      createPage({
+        path: `/tags/${slugify(tag)}`,
+        component: templates.taggedPosts,
+        context: {
+          tag,
+        },
+      })
     })
   })
 }

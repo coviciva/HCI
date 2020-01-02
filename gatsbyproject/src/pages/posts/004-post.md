@@ -1,8 +1,7 @@
 ---
-title: "OTVORENE PRIJAVE ZA PUB QUIZ: TINEL"
-date: 2019-12-23
-author: "Julija Vagić"
-path: "/cetvrti-post"
+title: "PRIJAVE ZA PUB QUIZ: TINEL"
+date: 2019-12-24
+author: "Josip Mileta"
 image: ../../images/postphoto2.jpg
 tags:
   - prijave

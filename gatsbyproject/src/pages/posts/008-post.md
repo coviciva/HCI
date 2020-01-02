@@ -1,8 +1,7 @@
 ---
-title: "Svjetsko kvizaško prvenstvo"
+title: "Svjetsko kvizasko prvenstvo"
 date: 2019-05-20
 author: "Josip Mileta"
-path: "/osmi-post"
 image: ../../images/postphoto2.jpg
 tags:
   - pravila

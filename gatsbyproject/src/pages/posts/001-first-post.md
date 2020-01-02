@@ -1,8 +1,7 @@
 ---
-title: "OTVORENE PRIJAVE ZA PUB QUIZ: DOMAĆIN"
-date: 2019-11-05
-author: "Luka Mileta"
-path: "/first-post"
+title: "PRIJAVE ZA PUB QUIZ: F1"
+date: 2019-12-22
+author: "Josip Mileta"
 image: ../../images/postphoto.jpg
 tags:
   - prijave
