@@ -3,6 +3,7 @@ title: "Quizzing 101 - rezultati"
 date: 2019-04-10
 author: "Josip Mileta"
 image: ../../images/postphoto.jpg
+postimage: ../../images/pqmd.png
 tags:
   - rezultati
 ---

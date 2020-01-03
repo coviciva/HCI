@@ -3,6 +3,7 @@ title: "Ekipno drzavno prvenstvo u kvizu #6"
 date: 2019-03-05
 author: "Josip Mileta"
 image: ../../images/postphoto.jpg
+postimage: ../../images/pqmd.png
 tags:
   - pravila
 ---

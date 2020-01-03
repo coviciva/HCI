@@ -1,5 +1,5 @@
 import React from "react"
-
+import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import Header1 from "../components/header1"
 
@@ -17,6 +17,10 @@ export default function Template({
         <div className="datum">
           <span>{post.date}</span>
         </div>
+        <Img
+          className="slika-u-postu"
+          fluid={post.postimage.childImageSharp.fluid}
+        />
 
         <div
           className="blog-post-content"
@@ -41,6 +45,13 @@ export const pageQuery = graphql`
         date(formatString: "MM DD YYYY")
         tags
         image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        postimage {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

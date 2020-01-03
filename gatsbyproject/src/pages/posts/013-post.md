@@ -3,6 +3,7 @@ title: "HUMANITARNA AKCIJA: CARITAS"
 date: 2019-12-19
 author: "Josip Mileta"
 image: ../../images/postphoto.jpg
+postimage: ../../images/pqmd.png
 tags:
   - humanitarna akcija
 ---

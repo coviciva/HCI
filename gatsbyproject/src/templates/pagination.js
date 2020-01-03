@@ -1,46 +1,48 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Post from "../components/Post"
-import SEO from "../components/seo"
 import Header1 from "../components/header1"
+import Post from "../components/Post"
+import { Link } from "gatsby"
 
-const tagPosts = ({ data, pageContext }) => {
-  const { tag } = pageContext
-  const { totalCount } = data.allMarkdownRemark
-  const pageHeader = `Broj objava:${totalCount} 
-  o: ${tag}`
+const Pagination = props => {
+  const posts = props.data.allMarkdownRemark.edges
+  const { currentPage } = props.pageContext
 
   return (
     <div>
-      <Header1>
-        <SEO title="Blog" />
-      </Header1>
-      <h3>{pageHeader}</h3>
+      <Header1>{`Page: ${currentPage}`}</Header1>
+
       <div className="svi-postovi">
-        {data.allMarkdownRemark.edges.map(({ node }) => (
+        {posts.map(({ node }) => (
           <Post
             key={node.id}
-            slug={node.fields.slug}
             title={node.frontmatter.title}
             author={node.frontmatter.author}
+            slug={node.fields.slug}
             date={node.frontmatter.date}
             body={node.frontmatter.body}
-            tags={node.frontmatter.tags}
             fluid={node.frontmatter.image.childImageSharp.fluid}
+            postfluid={node.frontmatter.postimage.childImageSharp.fluid}
+            tags={node.frontmatter.tags}
           />
         ))}
+      </div>
+      <div className="ostale-stranice">
+        <Link to="/blog">1</Link>
+        <Link to="/blog/pages/2">2</Link>
+        <Link to="/blog/pages/3">3</Link>
       </div>
     </div>
   )
 }
 
-export const tagQuery = graphql`
-  query($tag: String!) {
+export const postListQuery = graphql`
+  query postListQuerry($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      limit: $limit
+      skip: $skip
     ) {
-      totalCount
       edges {
         node {
           id
@@ -56,7 +58,7 @@ export const tagQuery = graphql`
                 }
               }
             }
-            postimage{
+            postimage {
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid
@@ -73,4 +75,5 @@ export const tagQuery = graphql`
     }
   }
 `
-export default tagPosts
+
+export default Pagination

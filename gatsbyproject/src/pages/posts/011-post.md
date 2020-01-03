@@ -3,6 +3,7 @@ title: "PRIJAVE ZA GLAZBENI PUB QUIZ"
 date: 2019-03-01
 author: "Julija Vagić"
 image: ../../images/postphoto2.jpg
+postimage: ../../images/pqmd.png
 tags:
   - prijave
 ---

@@ -3,6 +3,7 @@ title: "PRIJAVE ZA PUB QUIZ: TINEL"
 date: 2019-12-24
 author: "Josip Mileta"
 image: ../../images/postphoto2.jpg
+postimage: ../../images/pqmd.png
 tags:
   - prijave
 ---

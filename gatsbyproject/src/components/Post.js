@@ -14,7 +14,7 @@ const slugify = function(text) {
     .replace(/-+$/, "") // Trim - from end of text
 }
 
-const Post = ({ title, author, slug, date, body, fluid, tags }) => {
+const Post = ({ title, author, slug, date, body, fluid, postimage, tags }) => {
   return (
     <div className="Cards">
       <div className="CardBody">

@@ -3,6 +3,7 @@ title: "Glazbenih 100 – 02/2019 – rezultati"
 date: 2019-03-27
 author: "Josip Mileta"
 image: ../../images/postphoto2.jpg
+postimage: ../../images/pqmd.png
 tags:
   - rezultati
 ---
