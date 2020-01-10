@@ -42,7 +42,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         author
-        date(formatString: "MM DD YYYY")
+        date(formatString: "DD MM YYYY")
         tags
         image {
           childImageSharp {

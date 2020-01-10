@@ -7,8 +7,7 @@ import Header1 from "../components/header1"
 const tagPosts = ({ data, pageContext }) => {
   const { tag } = pageContext
   const { totalCount } = data.allMarkdownRemark
-  const pageHeader = `Broj objava:${totalCount} 
-  o: ${tag}`
+  const pageHeader = `TEMA: ${tag}`
 
   return (
     <div>
@@ -46,7 +45,7 @@ export const tagQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MM DD YYYY")
+            date(formatString: "DD MM YYYY")
             author
             tags
             image {
@@ -56,7 +55,7 @@ export const tagQuery = graphql`
                 }
               }
             }
-            postimage{
+            postimage {
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid

@@ -2,16 +2,17 @@ import React from "react"
 import { graphql } from "gatsby"
 import Header1 from "../components/header1"
 import Post from "../components/Post"
-import { Link } from "gatsby"
+import PaginationLinks from "../components/pagination-links"
+import Filter from "../components/blogfilter"
 
 const Pagination = props => {
   const posts = props.data.allMarkdownRemark.edges
-  const { currentPage } = props.pageContext
+  const { currentPage, numberOfPages } = props.pageContext
 
   return (
     <div>
-      <Header1>{`Page: ${currentPage}`}</Header1>
-
+      <Header1 />
+      <Filter />
       <div className="svi-postovi">
         {posts.map(({ node }) => (
           <Post
@@ -27,11 +28,10 @@ const Pagination = props => {
           />
         ))}
       </div>
-      <div className="ostale-stranice">
-        <Link to="/blog">1</Link>
-        <Link to="/blog/pages/2">2</Link>
-        <Link to="/blog/pages/3">3</Link>
-      </div>
+      <PaginationLinks
+        currentPage={currentPage}
+        numberOfPages={numberOfPages}
+      />
     </div>
   )
 }

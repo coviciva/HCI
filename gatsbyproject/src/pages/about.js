@@ -7,7 +7,10 @@ import Img from "gatsby-image"
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { absolutePath: { regex: "//content/images/odbor/" } }) {
+      allFile(
+        filter: { absolutePath: { regex: "//content/images/odbor/" } }
+        sort: { fields: name }
+      ) {
         edges {
           node {
             id
@@ -83,16 +86,16 @@ const AboutPage = () => {
               fluid={data.allFile.edges[0].node.childImageSharp.fluid}
               className="slikaosobe"
             />
-            <p>Morana Zibar</p>
-            <p>morana@gmail.com</p>
+            <p>Dean Kotiga</p>
+            <p>kotiga@gmail.com</p>
           </div>
           <div div className="osoba">
             <Img
               fluid={data.allFile.edges[1].node.childImageSharp.fluid}
               className="slikaosobe"
             />
-            <p>Dean Kotiga</p>
-            <p>kotiga@gmail.com</p>
+            <p>Morana Zibar</p>
+            <p>morana@gmail.com</p>
           </div>
 
           <div div className="osoba">

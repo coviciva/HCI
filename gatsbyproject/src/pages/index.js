@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 const IndexPage = ({ data }) => {
-  console.log(data)
   return (
     <div>
       <Header1>
@@ -27,7 +26,8 @@ const IndexPage = ({ data }) => {
               <button className="buttonmore">SAZNAJ VIŠE</button>
             </Link>
             <Link to="/prijava-na-kviz">
-            <button className="buttonprijavise">PRIJAVI SE</button></Link>
+              <button className="buttonprijavise">PRIJAVI EKIPU</button>
+            </Link>
           </div>
         </div>
       </div>

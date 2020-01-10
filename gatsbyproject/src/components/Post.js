@@ -28,6 +28,7 @@ const Post = ({ title, author, slug, date, body, fluid, postimage, tags }) => {
           <Link to={slug} className="CardMore">
             Saznaj vise
           </Link>
+          {/*}
           <ul className="tags">
             {tags.map(tag => (
               <li key={tag}>
@@ -35,6 +36,7 @@ const Post = ({ title, author, slug, date, body, fluid, postimage, tags }) => {
               </li>
             ))}
           </ul>
+            */}
         </div>
       </div>
     </div>
