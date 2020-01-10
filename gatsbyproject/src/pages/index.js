@@ -26,7 +26,8 @@ const IndexPage = ({ data }) => {
             <Link to="/prijave-za-pub-quiz-tinel">
               <button className="buttonmore">SAZNAJ VIŠE</button>
             </Link>
-            <button className="buttonprijavise"> PRIJAVI SE</button>
+            <Link to="/prijava-na-kviz">
+            <button className="buttonprijavise">PRIJAVI SE</button></Link>
           </div>
         </div>
       </div>

@@ -51,6 +51,7 @@
   border-radius: 8px;
   box-shadow: inset 0px 1px 0px 0px #3a0707;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .myButton:hover {
@@ -412,4 +413,41 @@ footer h1 {
 }
 .blog-post-content {
   margin-top: 50px;
+}
+
+.prijava{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.box{
+  margin: 20px;
+  padding: 10px;
+  width: 230px;
+  height: 40px;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  cursor: pointer;
+}
+
+.butt {
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #68c5e7;
+  border-radius: 9px;
+  border: 2px solid #30afb8;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.butt:hover {
+  color: white;
+  box-shadow: 0 12px 16px 0 #aaaaaa,
+    0 17px 50px 0 #aaaaaa;
 }
