@@ -3,7 +3,7 @@ title: "HUMANITARNA AKCIJA: MALI DOM"
 date: 2019-08-07
 author: "Luka Mileta"
 image: ../../images/postphoto2.jpg
-postimage: ../../images/malidom.jpg
+postimage: ../../images/malidom2.jpg
 tags:
   - humanitarna akcija
 ---

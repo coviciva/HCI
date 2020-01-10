@@ -3,7 +3,7 @@ title: "PRIJAVE ZA PUB QUIZ: F1"
 date: 2019-12-22
 author: "Josip Mileta"
 image: ../../images/postphoto.jpg
-postimage: ../../images/pqmd.png
+postimage: ../../images/f1logo.png
 tags:
   - prijave
 ---

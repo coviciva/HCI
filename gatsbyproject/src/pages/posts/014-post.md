@@ -3,7 +3,7 @@ title: "PRIJAVE ZA PUB QUIZ: LEONARDO"
 date: 2019-07-07
 author: "Josip Mileta"
 image: ../../images/postphoto.jpg
-postimage: ../../images/pq3.jpg
+postimage: ../../images/pq6.png
 tags:
   - prijave
 ---

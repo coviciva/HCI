@@ -3,7 +3,7 @@ title: "Europsko prvenstvo - Sofija 2019."
 date: 2019-11-12
 author: "Julija Vagić"
 image: ../../images/postphoto2.jpg
-postimage: ../../images/pqmd.png
+postimage: ../../images/pqwinners.jpg
 tags:
   - izvjestaj
 ---

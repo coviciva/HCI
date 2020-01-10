@@ -3,7 +3,7 @@ title: "Svjetsko kvizasko prvenstvo"
 date: 2019-05-20
 author: "Josip Mileta"
 image: ../../images/postphoto2.jpg
-postimage: ../../images/pqmd.png
+postimage: ../../images/quiz-winners.jpg
 tags:
   - pravila
 ---

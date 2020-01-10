@@ -3,7 +3,7 @@ title: "PRIJAVE ZA PUB QUIZ: NOGOMETNE IKONE"
 date: 2019-12-22
 author: "Josip Mileta"
 image: ../../images/postphoto.jpg
-postimage: ../../images/pqmd.png
+postimage: ../../images/ni.jpg
 tags:
   - prijave
 ---
