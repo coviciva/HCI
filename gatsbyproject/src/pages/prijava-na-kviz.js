@@ -15,7 +15,7 @@ const Prijava = () => (
             <input type="text" placeholder="Broj članova tima" className="box"></input>
             <input type="text" placeholder="Broj mobitela" className="box"></input>
             <input type="email" placeholder="Email" className="box"></input>
-            <button className="butt" onClick={() => {obavijest()}}>Prijavi se</button>
+            <button className="butt" onClick={() => {obavijest()}}>Pošalji</button>
             
         </div>
     </div>
