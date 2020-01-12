@@ -8,6 +8,17 @@ const slugify = function(text) {
     .replace(/^-+/, "") // Trim - from start of text
     .replace(/-+$/, "") // Trim - from end of text
 }
+
+const combinations = function(array) {
+  return new Array(1 << array.length)
+    .fill()
+    .map((e1, i) => array.filter((e2, j) => i & (1 << j)))
+}
+
+const concatarray = function(array) {
+  return array.join("+")
+}
+
 const path = require(`path`)
 const _ = require(`lodash`)
 
@@ -32,6 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
     tagsPageTemplate: path.resolve("src/templates/tags.js"),
     taggedPosts: path.resolve("src/templates/tagged-posts.js"),
     postList: path.resolve("src/templates/pagination.js"),
+    filterTemplate: path.resolve("src/templates/filter-template.js"),
   }
   return graphql(`
     {
@@ -62,6 +74,7 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
+
     let tags = []
     _.each(posts, edge => {
       if (_.get(edge, "node.frontmatter.tags")) {
@@ -81,6 +94,18 @@ exports.createPages = ({ actions, graphql }) => {
         tags,
         tagPostCounts,
       },
+    })
+
+    let tagsLists = combinations(tags).filter(a => a.length >= 2)
+
+    tagsLists.forEach(taglist => {
+      createPage({
+        path: `/tags/${concatarray(taglist)}`,
+        component: templates.filterTemplate,
+        context: {
+          taglist,
+        },
+      })
     })
 
     tags.forEach(tag => {

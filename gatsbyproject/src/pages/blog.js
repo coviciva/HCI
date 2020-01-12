@@ -5,7 +5,7 @@ import Header1 from "../components/header1"
 import Post from "../components/Post"
 import PaginationLinks from "../components/pagination-links"
 import Filter from "../components/blogfilter"
-import { Link } from "gatsby"
+
 
 const Blog = () => {
   const postsPerPage = 6
