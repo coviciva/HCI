@@ -1,10 +1,13 @@
-import React, { Component } from "react"
+import React, { Component, useState } from "react"
 import Navigation from "../components/navigation"
 import "./header1.css"
 import { useStaticQuery, graphql } from "gatsby"
 import LogoLink from "../components/logo"
+import IdentityModal from 'react-netlify-identity-widget'
+import { useIdentityContext, IdentityContextProvider } from 'react-netlify-identity-widget'
+import 'react-netlify-identity-widget/styles.css'
 
-export function initNetlifyIdentity() {
+/* export function initNetlifyIdentity() {
   console.log("initNetlify called.")
   const script = document.createElement("script")
 
@@ -13,15 +16,15 @@ export function initNetlifyIdentity() {
 
   document.body.appendChild(script)
 }
-
-function openNetlifyModal() {
+ */
+/* function openNetlifyModal() {
   const netlifyIdentity = window.netlifyIdentity
 
   if (netlifyIdentity) netlifyIdentity.open()
   else console.log("netlifyIdentity not defined")
-}
+} */
 
-class NetlifyIdentity extends Component {
+/* class NetlifyIdentity extends Component {
   componentDidMount() {
     initNetlifyIdentity()
   }
@@ -29,9 +32,10 @@ class NetlifyIdentity extends Component {
   render() {
     return <div></div>
   }
-}
+} */
 
 const Header1 = props => {
+  const url='https://sharp-shannon-7a933d.netlify.com/'
   const data = useStaticQuery(graphql`
     {
       site {
@@ -48,25 +52,34 @@ const Header1 = props => {
   //const {MenuItems} = data.site.siteMetadata, doli se u viticaste doda MenuItems
 
   console.log(props)
+  const [showDialog, setShowDialog]=useState(false);
   return (
     <div className="header">
-      
+      <IdentityContextProvider url={url}>
       <LogoLink />
-      <NetlifyIdentity />
+      
+      {/* <NetlifyIdentity /> */}
       <div className="header-right">
         <Navigation MenuItems={data.site.siteMetadata.MenuItems} />
+        
         <button
           type="button"
           className="myButton"
-          onClick={() => {
+          onClick={()=>setShowDialog(true)}
+          /* onClick={() => {
             openNetlifyModal()
-          }}
+          }} */
         >
-          LOG IN
+          PRIJAVA
         </button>
-        <div className="hamburger">III</div>
+        <IdentityModal showDialog={showDialog} onCloseDialog={()=>setShowDialog(false)}/>
+       
+        <div className="hamburger">III</div> 
+        
       </div>
+      </IdentityContextProvider>
     </div>
+    
   )
 }
 
