@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
           fluid={data.allFile.edges[0].node.childImageSharp.fluid}
         />
         <div className="textonphoto">
-          <p>PUB QUIZ: TINEL </p>
+          <p className="nasl">PUB QUIZ: TINEL </p>
           <p>28/12/2019 </p>
           <div className="buttonsonphoto">
             <Link to="/prijave-za-pub-quiz-tinel">
