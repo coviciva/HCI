@@ -271,7 +271,7 @@ footer h1 {
   .textonphoto {
     left: 50%;
     top: 55%;
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .buttonsonphoto > * {
@@ -516,3 +516,4 @@ footer h1 {
 .filtericona:hover {
   background-color: #ddd;
 }
+
