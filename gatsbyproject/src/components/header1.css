@@ -62,24 +62,13 @@
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media only screen and (min-width: 801px) {
-  .hamburger {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 .mainphoto-container {
   position: relative;
   text-align: center;
 }
 .homephoto {
-  height: 80vh;
+  max-width: 100%;
+  max-height: 80vh;
 }
 
 .textonphoto {
@@ -94,6 +83,10 @@
 }
 .textonphoto p {
   padding-bottom: 20px;
+}
+.nasl {
+  font-size: 60px;
+  padding-bottom: 30px;
 }
 
 .buttonmore {
@@ -258,10 +251,6 @@ footer h1 {
 }
 
 @media only screen and (max-width: 400px) {
-  .homephoto {
-    height: 50vh;
-    width: 375px;
-  }
   .buttonsonphoto {
     display: flex;
     width: 270px;
@@ -520,11 +509,120 @@ footer h1 {
 .place {
   font-size: 25px;
 }
-
-.nasl {
-  font-size: 60px;
-  padding-bottom: 30px;
+@media only screen and (min-width: 801px) {
+  .hamburger {
+    display: none;
+  }
 }
 
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .textonphoto {
+    padding-top: 40px;
+  }
+}
 
+@media only screen and (max-width: 843px) {
+  .textonphoto {
+    padding-top: 40px;
+  }
+  .nasl {
+    font-size: 50px;
+  }
+}
 
+@media only screen and (max-width: 760px) {
+  .nasl {
+    font-size: 45px;
+    padding-top: 100px;
+  }
+
+  .buttonmore {
+    margin: 0;
+  }
+  .buttonprijavise {
+    margin: 0;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .nasl {
+    font-size: 45px;
+    padding-top: 50px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .nasl {
+    font-size: 45px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nasl {
+    font-size: 45px;
+    padding-top: 10px;
+  }
+  .buttonprijavise {
+    padding: 6px 25px;
+  }
+  .buttonmore {
+    padding: 7px 25px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .buttonprijavise {
+    padding: 6px 20px;
+  }
+  .buttonmore {
+    padding: 7px 20px;
+  }
+}
+
+@media only screen and (max-width: 636px) {
+  .nasl {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .datumkviza {
+    font-size: 35px;
+  }
+  .buttonprijavise {
+    padding: 6px 20px;
+  }
+  .buttonmore {
+    padding: 7px 20px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .buttonsonphoto {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 541px) {
+  .nasl {
+    font-size: 37px;
+    margin-top: 20px;
+  }
+  .datumkviza {
+    font-size: 30px;
+  }
+  .buttonsonphoto {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+  .buttonmore {
+    padding: 6px 20px;
+  }
+
+  .buttonprijavise {
+    padding: 6px 20px;
+  }
+}
