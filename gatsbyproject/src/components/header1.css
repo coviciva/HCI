@@ -251,28 +251,6 @@ footer h1 {
 }
 
 @media only screen and (max-width: 400px) {
-  .buttonsonphoto {
-    display: flex;
-    width: 270px;
-    padding-left: 25px;
-  }
-
-  .textonphoto {
-    left: 50%;
-    top: 55%;
-    font-size: 80px;
-  }
-
-  .buttonsonphoto > * {
-    font-size: 12px;
-    padding: 6px;
-  }
-
-  .buttonprijavise {
-    padding-left: 13px;
-    padding-right: 13px;
-  }
-
   .sponzori {
     padding: 15px;
     margin-left: -10px;
@@ -304,11 +282,6 @@ footer h1 {
 
   .myButton {
     display: none;
-  }
-
-  .header {
-    padding: 5px;
-    width: 375px;
   }
 
   .logoicon {
@@ -624,5 +597,197 @@ footer h1 {
 
   .buttonprijavise {
     padding: 6px 20px;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .nasl {
+    font-size: 35px;
+    margin-top: 27px;
+  }
+  .datumkviza {
+    font-size: 30px;
+  }
+  .buttonsonphoto {
+    width: 320px;
+    margin-bottom: 24px;
+  }
+  .buttonmore {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+
+  .buttonprijavise {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+}
+@media only screen and (max-width: 476px) {
+  .buttonsonphoto {
+    width: 320px;
+    margin-bottom: 29px;
+  }
+  .buttonmore {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+
+  .buttonprijavise {
+    font-size: 14px;
+    padding: 6px 16px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .buttonsonphoto {
+    width: 320px;
+    margin-bottom: 29px;
+  }
+  .buttonmore {
+    font-size: 14px;
+    padding: 6px 20px;
+    margin-left: 10px;
+  }
+
+  .buttonprijavise {
+    font-size: 14px;
+    padding: 6px 16px;
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 453px) {
+  .nasl {
+    font-size: 33px;
+    margin-top: 27px;
+  }
+  .datumkviza {
+    font-size: 28px;
+    padding-bottom: 2px;
+  }
+
+  .buttonsonphoto {
+    width: 320px;
+    margin-bottom: 45px;
+  }
+
+  .buttonmore {
+    font-size: 13px;
+    padding: 5px 18px;
+    margin-left: 10px;
+  }
+
+  .buttonprijavise {
+    font-size: 13px;
+    padding: 5px 15px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .nasl {
+    font-size: 31px;
+    margin-top: 40px;
+  }
+  .datumkviza {
+    font-size: 25px;
+    margin-bottom: 2px;
+  }
+
+  .buttonsonphoto {
+    width: 320px;
+    margin-bottom: 50px;
+  }
+
+  .buttonmore {
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-left: 10px;
+  }
+
+  .buttonprijavise {
+    font-size: 12px;
+    padding: 5px 14px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  .nasl {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .datumkviza {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  .buttonsonphoto {
+    width: 320px;
+    margin-bottom: 50px;
+  }
+
+  .buttonmore {
+    font-size: 11px;
+    padding: 4px 15px;
+    margin-left: 13px;
+  }
+
+  .buttonprijavise {
+    font-size: 11px;
+    padding: 4px 14px;
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 356px) {
+  .nasl {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .datumkviza {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  .buttonmore {
+    font-size: 11px;
+    padding: 4px 14px;
+    margin-left: 13px;
+  }
+
+  .buttonprijavise {
+    font-size: 11px;
+    padding: 4px 13px;
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 322px) {
+  .nasl {
+    font-size: 28px;
+    margin-top: 75px;
+  }
+  .datumkviza {
+    font-size: 19px;
+    margin-bottom: 0px;
+    padding: 0;
+    padding-bottom: 0;
+  }
+
+  .buttonsonphoto {
+    width: 320px;
+    margin-bottom: 70px;
+  }
+
+  .buttonmore {
+    font-size: 10px;
+    padding: 3px 13px;
+    margin-left: 13px;
+    margin-bottom: 30px;
+  }
+
+  .buttonprijavise {
+    font-size: 10px;
+    padding: 3px 12px;
+    margin-left: 5px;
+    margin-bottom: 30px;
   }
 }
