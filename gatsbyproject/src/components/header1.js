@@ -64,10 +64,10 @@ const Header1 = props => {
         <button className="menu-btn">MENU</button>
         <div className="dropdown-menu-content">
           <div className="menu-links">
-          <Link to="/">Home</Link> <br />
-          <Link to="/raspored">Raspored</Link> <br/>
-          <Link to="/rezultati">Rezultati</Link> <br/>
-          <Link to="/blog">Blog</Link> <br/>
+          <Link to="/">Naslovnica</Link> 
+          <Link to="/raspored">Raspored</Link> 
+          <Link to="/rezultati">Rezultati</Link>
+          <Link to="/blog">Blog</Link> 
           <Link to="/about">O nama</Link>
           </div>
         </div>

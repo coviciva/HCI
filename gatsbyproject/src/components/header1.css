@@ -382,10 +382,14 @@ footer h1 {
   z-index: 1;
 }
 
+.menu-links {
+  margin-bottom: 15px;
+}
+
 .dropdown-menu-content a {
   color: black;
   padding-left: 20px;
-  padding-top: 5px;
+  padding-top: 20px;
   text-decoration: none;
   display: block;
   font-size: 20px;
@@ -544,13 +548,13 @@ footer h1 {
 }
 @media only screen and (max-width: 900px) {
   .textonphoto {
-    padding-top: 40px;
+    margin-top: 25px;
   }
 }
 
 @media only screen and (max-width: 843px) {
   .textonphoto {
-    padding-top: 40px;
+    margin-top: 25px;
   }
   .nasl {
     font-size: 50px;
