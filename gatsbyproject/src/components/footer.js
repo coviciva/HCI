@@ -37,14 +37,16 @@ const Footer = props => {
       </div>
 
       <div className="contact">
-        <div className="citat">"Zanimljivi citat haha"</div>
-        
+        <div className="citat">
+          "Pub kviz? To vam je znanje, zabava i - pivo." - Dean Kotiga
+        </div>
+
         <div className="followus">
           <img src={Twitter}></img>
         </div>
         <div className="contactus">
-          Kontaktirajte nas na: <br/>
-          +385 98 765 4321 <br/>
+          Kontaktirajte nas na: <br />
+          +385 98 765 4321 <br />
           pubquiz@gmail.com
         </div>
       </div>

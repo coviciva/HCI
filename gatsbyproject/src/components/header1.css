@@ -61,13 +61,56 @@
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+.hamburger {
+  display: none;
+}
+/*
+.hamburger div {
+  width: 23px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+}
 
+@media only screen and (max-width: 843px) {
+  html {
+    overflow-x: hidden;
+  }
+  .linksinheader {
+    position: absolute;
+    right: 0px;
+    height: 80vh;
+    top: 15.5vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .linkovi {
+    padding: 15px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.linksinheader-active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+*/
 .mainphoto-container {
   position: relative;
   text-align: center;
 }
 .homephoto {
   max-width: 100%;
+  height: inherit;
   max-height: 80vh;
 }
 
@@ -276,15 +319,10 @@ footer h1 {
     height: 100px;
   }
 
-  .linksinheader {
+  .myButton {
     display: none;
   }
-
-  /* .myButton {
-    display: none;
-  } */
-
-  .logoicon {
+  */ .logoicon {
     margin-bottom: 0.4em;
     padding-left: 10px;
     padding-top: 5px;
@@ -378,7 +416,7 @@ footer h1 {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -409,9 +447,6 @@ footer h1 {
 
 /*POJAVLJIVA SE HAMBURGER*/
 @media only screen and (max-width: 800px) {
-  .linksinheader {
-    display: none;
-  }
   .header {
     padding-left: 5px;
   }
@@ -434,11 +469,17 @@ footer h1 {
   justify-content: flex-end;
   font-size: 15px;
 }
+
 .blog-post-content {
   margin-top: 50px;
 }
 
+.povrataknablog {
+  font-size: 15px;
+}
+
 .prijava {
+  font-family: "Calibri", "Trebuchet MS", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -446,16 +487,16 @@ footer h1 {
 }
 
 .box {
-  margin: 20px;
+  margin-top: 13px;
   padding: 10px;
-  width: 230px;
+  width: 250px;
   height: 40px;
-  box-shadow: 5px 5px 5px #aaaaaa;
+  box-shadow: 2px 2px 2px #e4e3e3;
   cursor: pointer;
 }
 
 .butt {
-  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background: linear-gradient(to bottom, #33bdef 1%, #019ad2 100%);
   background-color: #68c5e7;
   border-radius: 9px;
   border: 2px solid #30afb8;
@@ -464,14 +505,14 @@ footer h1 {
   font-family: Arial;
   font-size: 15px;
   font-weight: bold;
-  padding: 10px 30px;
+  padding: 5px 40px;
   margin-top: 30px;
   margin-right: 20px;
 }
 
 .butt:hover {
   color: white;
-  box-shadow: 0 12px 16px 0 #aaaaaa, 0 17px 50px 0 #aaaaaa;
+  box-shadow: 0 12px 10px 0 #d6d5d5, 0 10px 40px 0 #d6d5d5;
 }
 .dropbtn {
   padding: 13px;
@@ -535,11 +576,6 @@ footer h1 {
 .place {
   font-size: 25px;
 }
-@media only screen and (min-width: 801px) {
-  .hamburger {
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 480px) {
   html {
@@ -557,7 +593,7 @@ footer h1 {
     margin-top: 25px;
   }
   .nasl {
-    font-size: 50px;
+    font-size: 55px;
   }
 }
 
@@ -692,9 +728,12 @@ footer h1 {
 }
 
 @media only screen and (max-width: 465px) {
+  .textonphoto {
+    padding: 0;
+  }
   .buttonsonphoto {
     width: 320px;
-    margin-bottom: 29px;
+    margin-bottom: 0px;
   }
   .buttonmore {
     font-size: 14px;
@@ -720,7 +759,7 @@ footer h1 {
 
   .buttonsonphoto {
     width: 320px;
-    margin-bottom: 45px;
+    margin-bottom: 5px;
   }
 
   .buttonmore {
@@ -739,8 +778,9 @@ footer h1 {
 @media only screen and (max-width: 415px) {
   .nasl {
     font-size: 31px;
-    margin-top: 40px;
+    margin-top: 0px;
   }
+
   .datumkviza {
     font-size: 25px;
     margin-bottom: 2px;
@@ -748,7 +788,7 @@ footer h1 {
 
   .buttonsonphoto {
     width: 320px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .buttonmore {
@@ -767,7 +807,7 @@ footer h1 {
 @media only screen and (max-width: 386px) {
   .nasl {
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .datumkviza {
     font-size: 22px;
@@ -776,7 +816,7 @@ footer h1 {
 
   .buttonsonphoto {
     width: 320px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   .buttonmore {
@@ -794,7 +834,7 @@ footer h1 {
 @media only screen and (max-width: 356px) {
   .nasl {
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 0px;
   }
   .datumkviza {
     font-size: 22px;
@@ -816,7 +856,7 @@ footer h1 {
 @media only screen and (max-width: 322px) {
   .nasl {
     font-size: 28px;
-    margin-top: 75px;
+    margin-top: 0px;
   }
   .datumkviza {
     font-size: 19px;
@@ -827,7 +867,7 @@ footer h1 {
 
   .buttonsonphoto {
     width: 320px;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
   }
 
   .buttonmore {
@@ -849,6 +889,7 @@ footer h1 {
   height: 150px;
   background-color: black;
   color: white;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -860,10 +901,15 @@ footer h1 {
   padding-top: 20px;
 }
 
+.citat {
+  width: 15%;
+}
+.followus {
+  margin-right: 30px;
+}
 .followus img {
   height: 40px;
   width: 130px;
-  
 }
 
 .f2 {
@@ -871,4 +917,15 @@ footer h1 {
   color: white;
   text-align: center;
   font-family: "Calibri", "Trebuchet MS", sans-serif;
+}
+
+.arrowicon {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+.arrowdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

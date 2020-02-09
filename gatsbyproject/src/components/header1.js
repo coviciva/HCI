@@ -3,10 +3,13 @@ import Navigation from "../components/navigation"
 import "./header1.css"
 import { useStaticQuery, graphql } from "gatsby"
 import LogoLink from "../components/logo"
-import IdentityModal from 'react-netlify-identity-widget'
-import { useIdentityContext, IdentityContextProvider } from 'react-netlify-identity-widget'
-import 'react-netlify-identity-widget/styles.css'
-import {Link} from "gatsby"
+import IdentityModal from "react-netlify-identity-widget"
+import {
+  useIdentityContext,
+  IdentityContextProvider,
+} from "react-netlify-identity-widget"
+import "react-netlify-identity-widget/styles.css"
+import { Link } from "gatsby"
 
 /* export function initNetlifyIdentity() {
   console.log("initNetlify called.")
@@ -34,9 +37,18 @@ import {Link} from "gatsby"
     return <div></div>
   }
 } */
+/* RESPO-Marija
 
+const navSlider = () => {
+  const nav = document.querySelector(".linksinheader")
+
+  nav.classList.toggle("linksinheader-active")
+
+  //animate links
+}
+*/
 const Header1 = props => {
-  const url='https://sharp-shannon-7a933d.netlify.com/'
+  const url = "https://sharp-shannon-7a933d.netlify.com/"
   const data = useStaticQuery(graphql`
     {
       site {
@@ -50,51 +62,51 @@ const Header1 = props => {
     }
   `)
 
-
   //const {MenuItems} = data.site.siteMetadata, doli se u viticaste doda MenuItems
 
   console.log(props)
-  const [showDialog, setShowDialog]=useState(false);
+  const [showDialog, setShowDialog] = useState(false)
   return (
     <div className="header">
       <IdentityContextProvider url={url}>
-      <LogoLink />
+        <LogoLink />
 
-      <div className="dropdown-menu">
-        <button className="menu-btn">MENU</button>
-        <div className="dropdown-menu-content">
-          <div className="menu-links">
-          <Link to="/">Naslovnica</Link> 
-          <Link to="/raspored">Raspored</Link> 
-          <Link to="/rezultati">Rezultati</Link>
-          <Link to="/blog">Blog</Link> 
-          <Link to="/about">O nama</Link>
+        <div className="dropdown-menu">
+          <button className="menu-btn">MENU</button>
+          <div className="dropdown-menu-content">
+            <div className="menu-links">
+              <Link to="/">Naslovnica</Link>
+              <Link to="/raspored">Raspored</Link>
+              <Link to="/rezultati">Rezultati</Link>
+              <Link to="/blog">Blog</Link>
+              <Link to="/about">O nama</Link>
+            </div>
           </div>
         </div>
-      </div>
-      
-      {/* <NetlifyIdentity /> */}
-      <div className="header-right">
-        <Navigation MenuItems={data.site.siteMetadata.MenuItems} />
-        
-        <button
-          type="button"
-          className="myButton"
-          onClick={()=>setShowDialog(true)}
-          /* onClick={() => {
+
+        {/* <NetlifyIdentity /> */}
+        <div className="header-right">
+          <Navigation MenuItems={data.site.siteMetadata.MenuItems} />
+
+          <button
+            type="button"
+            className="myButton"
+            onClick={() => setShowDialog(true)}
+            /* onClick={() => {
             openNetlifyModal()
           }} */
-        >
-          PRIJAVA
-        </button>
-        <IdentityModal showDialog={showDialog} onCloseDialog={()=>setShowDialog(false)}/>
-       
-        {/* <div className="hamburger">III</div> */}
-        
-      </div>
+          >
+            PRIJAVA
+          </button>
+          <IdentityModal
+            showDialog={showDialog}
+            onCloseDialog={() => setShowDialog(false)}
+          />
+
+          {/* <div className="hamburger">III</div> */}
+        </div>
       </IdentityContextProvider>
     </div>
-    
   )
 }
 
