@@ -320,9 +320,11 @@ footer h1 {
   }
 
   .myButton {
-    display: none;
+    /*display: none;
   }
-  */ .logoicon {
+  */
+  }
+  .logoicon {
     margin-bottom: 0.4em;
     padding-left: 10px;
     padding-top: 5px;
@@ -351,7 +353,20 @@ footer h1 {
     padding-top: 30px;
   }
 }
-
+@media only screen and (max-width: 905px) {
+  .linksinheader {
+    font-size: 16px;
+  }
+  .logoicon {
+    width: 90px;
+    height: 90px;
+  }
+  .header {
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
 /* grid sponzora mora imat 2 stupca*/
 @media only screen and (max-width: 885px) {
   .slike_sponzora {
@@ -373,22 +388,6 @@ footer h1 {
     padding-left: 35px;
     padding-right: 50px;
     padding-top: 0px;
-  }
-}
-
-@media only screen and (max-width: 910px) {
-  .linkovi {
-    font-size: 16px;
-  }
-
-  .logoicon {
-    width: 90px;
-    height: 90px;
-  }
-  .header {
-    padding-left: 5px;
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 }
 
@@ -449,6 +448,9 @@ footer h1 {
 @media only screen and (max-width: 800px) {
   .header {
     padding-left: 5px;
+  }
+  .linksinheader {
+    display: none;
   }
 }
 
@@ -596,7 +598,11 @@ footer h1 {
     font-size: 55px;
   }
 }
-
+@media only screen and (max-width: 773px) {
+  .nasl {
+    font-size: 50px;
+  }
+}
 @media only screen and (max-width: 760px) {
   .nasl {
     font-size: 45px;
