@@ -6,6 +6,7 @@ import LogoLink from "../components/logo"
 import IdentityModal from 'react-netlify-identity-widget'
 import { useIdentityContext, IdentityContextProvider } from 'react-netlify-identity-widget'
 import 'react-netlify-identity-widget/styles.css'
+import {Link} from "gatsby"
 
 /* export function initNetlifyIdentity() {
   console.log("initNetlify called.")
@@ -49,6 +50,7 @@ const Header1 = props => {
     }
   `)
 
+
   //const {MenuItems} = data.site.siteMetadata, doli se u viticaste doda MenuItems
 
   console.log(props)
@@ -57,6 +59,19 @@ const Header1 = props => {
     <div className="header">
       <IdentityContextProvider url={url}>
       <LogoLink />
+
+      <div className="dropdown-menu">
+        <button className="menu-btn">MENU</button>
+        <div className="dropdown-menu-content">
+          <div className="menu-links">
+          <Link to="/">Home</Link> <br />
+          <Link to="/raspored">Raspored</Link> <br/>
+          <Link to="/rezultati">Rezultati</Link> <br/>
+          <Link to="/blog">Blog</Link> <br/>
+          <Link to="/about">O nama</Link>
+          </div>
+        </div>
+      </div>
       
       {/* <NetlifyIdentity /> */}
       <div className="header-right">
@@ -74,7 +89,7 @@ const Header1 = props => {
         </button>
         <IdentityModal showDialog={showDialog} onCloseDialog={()=>setShowDialog(false)}/>
        
-        <div className="hamburger">III</div> 
+        {/* <div className="hamburger">III</div> */}
         
       </div>
       </IdentityContextProvider>
