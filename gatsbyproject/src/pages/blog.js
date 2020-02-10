@@ -5,7 +5,7 @@ import Header1 from "../components/header1"
 import Post from "../components/Post"
 import PaginationLinks from "../components/pagination-links"
 import Filter from "../components/blogfilter"
-
+import Footer2 from "../components/footer2"
 
 const Blog = () => {
   const postsPerPage = 6
@@ -44,6 +44,7 @@ const Blog = () => {
         }}
       ></StaticQuery>
       <PaginationLinks currentPage={1} numberOfPages={numberOfPages} />
+      <Footer2></Footer2>
     </div>
   )
 }

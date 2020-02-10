@@ -1,6 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import Header1 from "../components/header1"
+import Footer2 from "../components/footer2"
 
 const RezultatiPage = () => (
   <div>
@@ -69,6 +70,7 @@ const RezultatiPage = () => (
         <p>3. MJESTO: TEAM C</p>
       </div>
     </div>
+    <Footer2></Footer2>
   </div>
 )
 

@@ -1,13 +1,13 @@
 import React from "react"
 import SEO from "../components/seo"
 import Header1 from "../components/header1"
+import Footer2 from "../components/footer2"
 
 const RasporedPage = () => (
   <div>
     <Header1>
       <SEO title="Raspored" />
     </Header1>
-
 
     <div className="maindiv">
       <div className="div2">
@@ -68,6 +68,7 @@ const RasporedPage = () => (
         </div>
       </div>
     </div>
+    <Footer2></Footer2>
   </div>
 )
 

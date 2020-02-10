@@ -130,6 +130,7 @@
 .nasl {
   font-size: 60px;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .buttonmore {
@@ -234,8 +235,8 @@ footer h1 {
 }
 
 .slike_sponzora > * {
-  width: 260px;
-  height: 150px;
+  width: 220px;
+  height: 110px;
 }
 
 .slike_sponzora {
@@ -243,13 +244,172 @@ footer h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 40px;
-  padding: 40px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
-.raspored h4 {
-  padding-left: 10px;
+@media only screen and (max-width: 957px) {
+  .slike_sponzora {
+    padding: 10px;
+  }
+  .slike_sponzora > * {
+    width: 210px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .slike_sponzora {
+    padding: 5px;
+  }
+  .slike_sponzora > * {
+    width: 200px;
+    height: 90px;
+  }
+}
+@media only screen and (max-width: 865px) {
+  .slike_sponzora {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+  }
 }
 
+@media only screen and (max-width: 666px) {
+  .slike_sponzora {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+  }
+  .slike_sponzora > * {
+    width: 180px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .sponzori {
+    font-size: 2rem;
+  }
+  .slike_sponzora {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+  }
+  .slike_sponzora > * {
+    width: 170px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 551px) {
+  .sponzori {
+    font-size: 2rem;
+  }
+  .slike_sponzora {
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+    padding: 0px 25px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+  .slike_sponzora > * {
+    width: 180px;
+    height: 80px;
+  }
+
+  .slike_sponzora > div:nth-child(3) {
+    visibility: hidden;
+  }
+  .slike_sponzora > div:nth-child(6) {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .slike_sponzora {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 0px 25px;
+    padding-left: 40px;
+  }
+}
+@media only screen and (max-width: 491px) {
+  .slike_sponzora {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 0px 25px;
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 466px) {
+  .sponzori {
+    padding-bottom: 0;
+  }
+  .slike_sponzora {
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    padding: 0px 20px;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .slike_sponzora {
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+    padding: 0px 20px;
+    padding-left: 10px;
+  }
+  .slike_sponzora > * {
+    width: 160px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .slike_sponzora {
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+    padding: 0px 20px;
+    padding-left: 30px;
+  }
+  .slike_sponzora > * {
+    width: 160px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .slike_sponzora {
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+    padding: 0px 20px;
+    padding-left: 15px;
+  }
+  .slike_sponzora > * {
+    width: 150px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .slike_sponzora {
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    padding: 0px 3px;
+  }
+  .slike_sponzora > * {
+    width: 150px;
+    height: 60px;
+  }
+}
 .vrijeme {
   justify-self: flex-end;
   padding-right: 10px;
@@ -262,21 +422,34 @@ footer h1 {
 
 .osoba {
   margin-bottom: 40px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .osoba p {
   margin-bottom: 0.3rem;
+}
+.ime {
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 .onama {
   margin: auto;
   width: 50%;
   font-family: "Calibri", "Trebuchet MS", sans-serif;
   padding-top: 20px;
+  color: #2e4849;
+}
+.onama h1 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.7rem;
 }
 
 .upravniodbor {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 .slikaosobe {
   border-radius: 50%;
@@ -285,35 +458,27 @@ footer h1 {
 }
 .naslovciljevi {
   padding-top: 30px;
+  margin-bottom: 0.7rem;
 }
 .ciljevi1 {
   padding-bottom: 40px;
 }
+.uon {
+  margin-bottom: 0.2rem;
+}
 .ciljevi {
   column-count: 2;
 }
+.ciljevi1 li {
+  color: #2e4849;
+}
+
+.uloga {
+  font-size: 12px;
+  margin: 0;
+}
 
 @media only screen and (max-width: 400px) {
-  .sponzori {
-    padding: 15px;
-    margin-left: -10px;
-    margin-bottom: 0;
-  }
-
-  .slike_sponzora {
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 15px;
-    padding-left: 35px;
-    padding-right: 50px;
-    padding-top: 0px;
-  }
-
-  .slike_sponzora > * {
-    width: 100px;
-    height: 40px;
-  }
-
   footer {
     width: 375px;
     height: 100px;
@@ -365,29 +530,6 @@ footer h1 {
     padding-left: 5px;
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-}
-/* grid sponzora mora imat 2 stupca*/
-@media only screen and (max-width: 885px) {
-  .slike_sponzora {
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 15px;
-    padding-left: 35px;
-    padding-right: 50px;
-    padding-top: 0px;
-  }
-}
-
-/* grid sponzora mora imat 1 stupac - ili smanjit slike i stavit ih u stupce*/
-@media only screen and (max-width: 606px) {
-  .slike_sponzora {
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 15px;
-    padding-left: 35px;
-    padding-right: 50px;
-    padding-top: 0px;
   }
 }
 
@@ -653,6 +795,9 @@ footer h1 {
 }
 
 @media only screen and (max-width: 636px) {
+  .onama {
+    font-size: 16px;
+  }
   .nasl {
     font-size: 40px;
     margin-bottom: 0;
@@ -905,10 +1050,18 @@ footer h1 {
 .contactus {
   padding-left: 20px;
   padding-top: 20px;
+  padding-right: 4px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 15px;
 }
 
 .citat {
-  width: 15%;
+  width: 17%;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 15px;
+  color: #b3e3f5;
 }
 .followus {
   margin-right: 30px;
@@ -934,4 +1087,124 @@ footer h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media only screen and (max-width: 925px) {
+  .slikaosobe {
+    width: 120px;
+    height: 120px;
+  }
+  .contact {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 905px) {
+  .citat {
+    font-size: 14px;
+    width: 200px;
+  }
+  .contactus {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 871px) {
+  .slikaosobe {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .mail {
+    font-size: 15px;
+  }
+  .ime {
+    font-size: 15px;
+  }
+  .citat {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 807px) {
+  .onama {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 753px) {
+  .slikaosobe {
+    width: 100px;
+    height: 100px;
+  }
+  .followus {
+    height: 20px;
+    width: 110px;
+  }
+  .contactus {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .ciljevi {
+    column-count: 1;
+  }
+  .mail {
+    font-size: 16px;
+  }
+  .ime {
+    font-size: 16px;
+  }
+  .onama {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 637px) {
+  .onama {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .citat {
+    width: 160px;
+  }
+  .followus {
+    height: 20px;
+    width: 105px;
+  }
+}
+
+@media only screen and (max-width: 542px) {
+  .slikaosobe {
+    width: 90px;
+    height: 90px;
+  }
+  .mail {
+    font-size: 14px;
+  }
+  .citat {
+    display: none;
+  }
+}
+@media only screen and (max-width: 488px) {
+  .onama {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .onama {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .slikaosobe {
+    width: 80px;
+    height: 80px;
+  }
+  .ime {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 322px) {
+  .contactus {
+    font-size: 13px;
+  }
 }

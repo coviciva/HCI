@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import Header1 from "../components/header1"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Footer2 from "../components/footer2"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -50,10 +51,7 @@ const AboutPage = () => {
         <h3 className="naslovciljevi">CILJEVI</h3>
         <div className="ciljevi1">
           <div className="ciljevi">
-            <li>
-              Promoviranje i poticanje kulture kvizova u svim inačicama
-              (televizijski, internet, pub i dr.)
-            </li>
+            <li>Promoviranje i poticanje kulture kvizova u svim inačicama</li>
             <li>
               Promoviranje i poticanje općenito kulture stjecanja širokih
               područja znanja i opće svakodnevne informiranosti
@@ -69,45 +67,48 @@ const AboutPage = () => {
               Promoviranje i poticanje kritičkog načina razmišljanja i
               vrednovanja primljenih informacija
             </li>
-            <li>
-              Promoviranje i poticanje ravnopravnosti spolova u kviz kulturi
-            </li>
-            <li>
-              Promoviranje i poticanje kulture kvizova u svim inačicama
-              (televizijski, internet, pub i dr.)
-            </li>
+            <li>Promoviranje i poticanje kozmopolitskog načina razmišljanja</li>
+            <li>Promoviranje i poticanje kulture kvizova u svim inačicama</li>
           </div>
         </div>
 
-        <h3>UPRAVNI ODBOR</h3>
+        <h3 className="uon">UPRAVNI ODBOR</h3>
+
         <div className="upravniodbor">
           <div div className="osoba">
+            <p className="uloga">PREDSJEDNIK</p>
             <Img
               fluid={data.allFile.edges[0].node.childImageSharp.fluid}
               className="slikaosobe"
             />
-            <p>Dean Kotiga</p>
-            <p>kotiga@gmail.com</p>
+            <p className="ime">Dean Kotiga</p>
+
+            <p className="mail">kotiga@gmail.com</p>
           </div>
           <div div className="osoba">
+            <p className="uloga">POTPREDSJEDNICA</p>
             <Img
               fluid={data.allFile.edges[1].node.childImageSharp.fluid}
               className="slikaosobe"
             />
-            <p>Morana Zibar</p>
-            <p>morana@gmail.com</p>
+            <p className="ime">Morana Zibar</p>
+
+            <p className="mail">morana@gmail.com</p>
           </div>
 
           <div div className="osoba">
+            <p className="uloga">TAJNIK</p>
             <Img
               fluid={data.allFile.edges[2].node.childImageSharp.fluid}
               className="slikaosobe"
             />
-            <p>Tarik Filipović</p>
-            <p>tarik@outlook.com</p>
+            <p className="ime">Tarik Filipović</p>
+
+            <p className="mail">tarik@outlook.com</p>
           </div>
         </div>
       </div>
+      <Footer2></Footer2>
     </div>
   )
 }

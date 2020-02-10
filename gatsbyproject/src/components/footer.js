@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "./header1.css"
-import Twitter from "../images/twitter.gif"
+import Footer2 from "../components/footer2"
 
 const Footer = props => {
   const data = useStaticQuery(graphql`
@@ -35,23 +35,7 @@ const Footer = props => {
           <Img key={node.id} fluid={node.childImageSharp.fluid} />
         ))}
       </div>
-
-      <div className="contact">
-        <div className="citat">
-          "Pub kviz? To vam je znanje, zabava i - pivo." - Dean Kotiga
-        </div>
-
-        <div className="followus">
-          <img src={Twitter}></img>
-        </div>
-        <div className="contactus">
-          Kontaktirajte nas na: <br />
-          +385 98 765 4321 <br />
-          pubquiz@gmail.com
-        </div>
-      </div>
-
-      <div className="f2">&copy;2019 Pub Quiz</div>
+      <Footer2></Footer2>
     </div>
   )
 }
