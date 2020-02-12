@@ -180,6 +180,10 @@
     position: relative;
     overflow-x: hidden;
   }
+  .blog-post-container {
+    position: relative;
+    overflow-x: hidden;
+  }
 
   .linksinheader {
     position: absolute;
