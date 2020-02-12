@@ -2,6 +2,7 @@
   display: grid;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 .CardBody {
   font-family: "Calibri", "Trebuchet MS", sans-serif;

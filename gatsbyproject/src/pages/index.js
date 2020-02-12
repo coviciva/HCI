@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
   const url = "https://sharp-shannon-7a933d.netlify.com/"
 
   return (
-    <div>
+    <div className="indexbody">
       <IdentityContextProvider url={url}>
         <Header1>
           <SEO title="PubQuiz" />

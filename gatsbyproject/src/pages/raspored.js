@@ -34,7 +34,7 @@ const raspored = [
 ]
 
 const RasporedPage = () => (
-  <div>
+  <div className="rasporedbody">
     <Header1>
       <SEO title="Raspored" />
     </Header1>

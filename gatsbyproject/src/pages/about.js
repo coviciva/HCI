@@ -27,7 +27,7 @@ const AboutPage = () => {
     }
   `)
   return (
-    <div>
+    <div className="aboutbody">
       <Header1>
         <SEO title="O nama" />
       </Header1>

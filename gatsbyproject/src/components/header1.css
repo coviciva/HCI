@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .header {
@@ -160,9 +159,26 @@
 }*/
 
 @media only screen and (max-width: 830px) {
-  html {
+  .indexbody {
+    position: relative;
     overflow-x: hidden;
-    overflow-y: hidden;
+  }
+  .rasporedbody {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .rezultatibody {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .blogbody {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .aboutbody {
+    position: relative;
+    overflow-x: hidden;
   }
 
   .linksinheader {
@@ -186,7 +202,7 @@
     cursor: pointer;
   }
   .hamburger div {
-    background-color: #c48bf3;
+    background-color: #e0c2f8;
   }
   .myButton {
     display: none;

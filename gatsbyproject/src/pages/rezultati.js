@@ -4,7 +4,7 @@ import Header1 from "../components/header1"
 import Footer2 from "../components/footer2"
 
 const RezultatiPage = () => (
-  <div>
+  <div className="rezultatibody">
     <Header1>
       <SEO title="Rezultati" />
     </Header1>

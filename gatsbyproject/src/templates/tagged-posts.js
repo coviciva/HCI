@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Post from "../components/Post"
 import SEO from "../components/seo"
 import Header1 from "../components/header1"
+import Footer2 from "../components/footer2"
 
 const tagPosts = ({ data, pageContext }) => {
   const { tag } = pageContext
@@ -10,7 +11,7 @@ const tagPosts = ({ data, pageContext }) => {
   const pageHeader = `TEMA: ${tag}`
 
   return (
-    <div>
+    <div className="blogbody">
       <Header1>
         <SEO title="Blog" />
       </Header1>
@@ -29,6 +30,7 @@ const tagPosts = ({ data, pageContext }) => {
           />
         ))}
       </div>
+      <Footer2 />
     </div>
   )
 }

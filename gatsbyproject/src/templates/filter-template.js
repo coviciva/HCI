@@ -14,7 +14,7 @@ const Filter = ({ data, pageContext }) => {
   const { taglist } = pageContext
   console.log(taglist)
   return (
-    <div>
+    <div className="blogbody">
       <Header1>
         <SEO title="Blog" />
       </Header1>

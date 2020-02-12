@@ -12,7 +12,7 @@ const Blog = () => {
   let numberOfPages
 
   return (
-    <div>
+    <div className="blogbody">
       <Header1>
         <SEO title="Blog" />
       </Header1>
