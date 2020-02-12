@@ -40,9 +40,10 @@ import { Link } from "gatsby"
 
 const navSlider = () => {
   const nav = document.querySelector(".linksinheader")
+  const burger = document.querySelector(".hamburger")
 
   nav.classList.toggle("linksinheader-active")
-
+  burger.classList.toggle("toggle")
   //animate links
 }
 
@@ -90,10 +91,11 @@ const Header1 = props => {
             onCloseDialog={() => setShowDialog(false)}
           />
         </div>
-        <div className="hamburger">
-          <button className="menu-btn" onClick={() => navSlider()}>
-            MENU
-          </button>
+        <div className="hamburger" onClick={() => navSlider()}>
+          {/* <button className="menu-btn">MENU</button> */}
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
         </div>
       </IdentityContextProvider>
     </div>
