@@ -13,7 +13,8 @@
   align-items: center;
   padding: 15px;
   padding-left: 3em;
-  padding-right: 3em;
+  padding-right: 1em;
+  height: 80px;
 }
 
 .header-right {
@@ -61,34 +62,35 @@
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.hamburger {
-  display: none;
-}
-/*
 .hamburger div {
   width: 23px;
   height: 3px;
   background-color: white;
   margin: 4px;
 }
-
-@media only screen and (max-width: 843px) {
+.hamburger {
+  display: none;
+}
+.myButton2 {
+  display: none;
+}
+/*
+@media only screen and (max-width: 801px) {
   html {
     overflow-x: hidden;
   }
-  .linksinheader {
+  .header-right {
     position: absolute;
     right: 0px;
-    height: 80vh;
-    top: 15.5vh;
+    padding-bottom: 20px;
+    top: 74px;
     background-color: rgb(20, 20, 20);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    z-index: 10;
+    width: 70%;
+    z-index: 1;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
   }
   .linkovi {
     padding: 15px;
@@ -97,13 +99,117 @@
     display: block;
     cursor: pointer;
   }
+  .myButton2 {
+    background-color: #d62e00;
+    border: none;
+    color: #c9c6c6;
+    padding: 3px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px 0px #3a0707;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .myButton {
+    display: none;
+  }
+}
+*/
+/*PRAVI GUMB PRIJAVI SE*/
+/*
+@media only screen and (max-width: 801px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .header-right {
+    position: absolute;
+    right: 0px;
+    padding-bottom: 20px;
+    top: 74px;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 50%;
+    z-index: 1;
+    transform: translateX(100%);
+  }
+  .linksinheader {
+    display: flex;
+    flex-direction: column;
+  }
+  .myButton {
+    padding: 5px 21px;
+  }
+}
+.linksinheader-active {
+  transform: translateX(0%);
+  opacity: 1;
+}*/
+
+@media only screen and (max-width: 830px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .linksinheader {
+    position: absolute;
+    right: 0px;
+    height: 50vh;
+    top: 70px;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    z-index: 10;
+    transform: translateX(100%);
+  }
+  .linkovi {
+    padding: 15px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .myButton {
+    display: none;
+  }
+  .myButton2 {
+    background-color: #d62e00;
+    border: none;
+    color: #c9c6c6;
+    padding: 3px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px 0px #3a0707;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
 }
 
 .linksinheader-active {
   transform: translateX(0%);
   opacity: 1;
+  transition: transform 0.5s ease-in;
 }
-*/
+
 .mainphoto-container {
   position: relative;
   text-align: center;
@@ -217,21 +323,46 @@ footer h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 22px;
 }
 
-.div2 {
-  display: flex;
-}
-
-.raspored {
+.raspored2 {
   background-color: #dddbdb;
-  width: 30vw;
-  height: 85px;
-  border-radius: 5px;
-  margin: 20px;
-  padding: 10px;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 5px;
+  width: 350px;
+  height: 145px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.naslovkviza {
+  font-size: 27px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.vrijemekviza {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.lokacija {
+  display: flex;
+  margin-top: 5px;
+}
+.lokacija span {
+  margin-left: 10px;
+}
+.datumkviza2 {
+  display: flex;
+  font-weight: bold;
+}
+.datumkviza2 span {
+  margin-left: 10px;
 }
 
 .slike_sponzora > * {
@@ -484,11 +615,6 @@ footer h1 {
     height: 100px;
   }
 
-  .myButton {
-    /*display: none;
-  }
-  */
-  }
   .logoicon {
     margin-bottom: 0.4em;
     padding-left: 10px;
@@ -533,16 +659,11 @@ footer h1 {
   }
 }
 
-@media only screen and (min-width: 800px) {
-  .menu-btn {
-    display: none;
-  }
-}
-
 .menu-btn {
-  background-color: black;
-  color: white;
+  background-color: rgb(15, 15, 15);
+  color: rgb(216, 214, 214);
   border-radius: 9px;
+  border-color: #dbc0ec;
   padding: 5px 10px;
   cursor: pointer;
 }
@@ -592,7 +713,7 @@ footer h1 {
     padding-left: 5px;
   }
   .linksinheader {
-    display: none;
+    /*display: none;*/
   }
 }
 
@@ -881,6 +1002,7 @@ footer h1 {
 @media only screen and (max-width: 465px) {
   .textonphoto {
     padding: 0;
+    margin-top: 0;
   }
   .buttonsonphoto {
     width: 320px;
@@ -927,6 +1049,9 @@ footer h1 {
 }
 
 @media only screen and (max-width: 415px) {
+  .textonphoto {
+    margin-top: 6px;
+  }
   .nasl {
     font-size: 31px;
     margin-top: 0px;
@@ -983,6 +1108,9 @@ footer h1 {
   }
 }
 @media only screen and (max-width: 356px) {
+  .textonphoto {
+    margin-top: 10px;
+  }
   .nasl {
     font-size: 30px;
     margin-top: 0px;
@@ -1073,7 +1201,7 @@ footer h1 {
 
 .f2 {
   background-color: black;
-  color: white;
+  color: rgb(105, 104, 104);
   text-align: center;
   font-family: "Calibri", "Trebuchet MS", sans-serif;
 }
@@ -1085,8 +1213,8 @@ footer h1 {
 }
 .arrowdiv {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 @media only screen and (max-width: 925px) {

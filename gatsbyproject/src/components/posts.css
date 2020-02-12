@@ -101,3 +101,70 @@ ul {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 469px) {
+  .CardBody {
+    width: 400px;
+  }
+  .card-image {
+    width: 400px;
+  }
+  .text-on-card {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .CardBody {
+    width: 350px;
+    height: 300px;
+  }
+  .card-image {
+    width: 350px;
+    height: 300px;
+  }
+  .text-on-card {
+    width: 350px;
+    height: 300px;
+  }
+  .ostale-stranice a {
+    font-size: 15px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .CardBody {
+    width: 310px;
+    height: 290px;
+  }
+  .card-image {
+    width: 310px;
+    height: 290px;
+  }
+  .text-on-card {
+    width: 310px;
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .CardBody {
+    width: 280px;
+    height: 260px;
+  }
+  .card-image {
+    width: 280px;
+    height: 260px;
+  }
+  .text-on-card {
+    width: 280px;
+    height: 220px;
+  }
+  .ostale-stranice a {
+    font-size: 14px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

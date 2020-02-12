@@ -37,7 +37,6 @@ import { Link } from "gatsby"
     return <div></div>
   }
 } */
-/* RESPO-Marija
 
 const navSlider = () => {
   const nav = document.querySelector(".linksinheader")
@@ -46,7 +45,7 @@ const navSlider = () => {
 
   //animate links
 }
-*/
+
 const Header1 = props => {
   const url = "https://sharp-shannon-7a933d.netlify.com/"
   const data = useStaticQuery(graphql`
@@ -71,19 +70,6 @@ const Header1 = props => {
       <IdentityContextProvider url={url}>
         <LogoLink />
 
-        <div className="dropdown-menu">
-          <button className="menu-btn">MENU</button>
-          <div className="dropdown-menu-content">
-            <div className="menu-links">
-              <Link to="/">Naslovnica</Link>
-              <Link to="/raspored">Raspored</Link>
-              <Link to="/rezultati">Rezultati</Link>
-              <Link to="/blog">Blog</Link>
-              <Link to="/about">O nama</Link>
-            </div>
-          </div>
-        </div>
-
         {/* <NetlifyIdentity /> */}
         <div className="header-right">
           <Navigation MenuItems={data.site.siteMetadata.MenuItems} />
@@ -92,6 +78,7 @@ const Header1 = props => {
             type="button"
             className="myButton"
             onClick={() => setShowDialog(true)}
+
             /* onClick={() => {
             openNetlifyModal()
           }} */
@@ -102,8 +89,11 @@ const Header1 = props => {
             showDialog={showDialog}
             onCloseDialog={() => setShowDialog(false)}
           />
-
-          {/* <div className="hamburger">III</div> */}
+        </div>
+        <div className="hamburger">
+          <button className="menu-btn" onClick={() => navSlider()}>
+            MENU
+          </button>
         </div>
       </IdentityContextProvider>
     </div>

@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Post from "../components/Post"
 import Header1 from "../components/header1"
+import Footer2 from "../components/footer2"
 
 const concatarray = function(array) {
   return array.join("+")
@@ -34,6 +35,8 @@ const Filter = ({ data, pageContext }) => {
           />
         ))}
       </div>
+
+      <Footer2></Footer2>
     </div>
   )
 }

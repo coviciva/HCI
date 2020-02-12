@@ -13,7 +13,15 @@ const Navigation = ({ MenuItems }) => {
       {MenuItem.text}
     </Link>
   ))
-  return <div className="linksinheader">{menus}</div>
+  return (
+    <div className="linksinheader">
+      {menus}
+
+      <button type="button" className="myButton2">
+        PRIJAVA
+      </button>
+    </div>
+  )
 }
 
 export default Navigation

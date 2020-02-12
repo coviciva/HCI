@@ -11,6 +11,7 @@ const Prijava = () => (
     <Header1></Header1>
 
     <h2 className="prijava">Prijava na pub kviz Tinel</h2>
+
     <MyForm />
     {/*<div className="prijava">
             <input type="text" placeholder="Naziv tima" className="box"></input>

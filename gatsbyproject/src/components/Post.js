@@ -26,7 +26,7 @@ const Post = ({ title, author, slug, date, body, fluid, postimage, tags }) => {
 
           {body}
           <Link to={slug} className="CardMore">
-            Saznaj vise
+            Saznaj više
           </Link>
           {/*}
           <ul className="tags">
