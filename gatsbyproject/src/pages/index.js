@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
           />
           <div className="textonphoto">
             <div className="nasl">PUB QUIZ: TINEL </div>
-            <p className="datumkviza">28/12/2019 </p>
+            <p className="datumkviza">20/02/2020 </p>
             <div className="buttonsonphoto">
               <Link to="/prijave-za-pub-quiz-tinel">
                 <button className="buttonmore">SAZNAJ VIŠE</button>
