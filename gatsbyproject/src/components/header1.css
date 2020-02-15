@@ -115,7 +115,7 @@
     cursor: pointer;
   }
   .hamburger div {
-    background-color: #e0c2f8;
+    background-color: #e2ccf3;
   }
   .myButton {
     display: none;
@@ -1053,6 +1053,17 @@
     font-size: 11px;
     padding: 4px 14px;
     margin-left: 5px;
+  }
+  .prijava2 {
+    font-size: 26px;
+    margin-left: 0;
+  }
+  .divuprijavi {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .lokacija2 {
+    margin-left: 25px;
   }
 }
 @media only screen and (max-width: 356px) {
