@@ -7,7 +7,7 @@ function obavijest(){
 } */
 
 const Prijava = () => (
-  <div>
+  <div className="prijavabody">
     <Header1></Header1>
 
     <h2 className="prijava">Prijava na pub kviz Tinel</h2>

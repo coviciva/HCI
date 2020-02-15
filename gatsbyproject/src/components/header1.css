@@ -159,19 +159,12 @@
 }*/
 
 @media only screen and (max-width: 830px) {
-  .indexbody {
-    position: relative;
-    overflow-x: hidden;
-  }
-  .rasporedbody {
-    position: relative;
-    overflow-x: hidden;
-  }
-  .rezultatibody {
-    position: relative;
-    overflow-x: hidden;
-  }
-  .blogbody {
+  .indexbody,
+  .blogbody,
+  .paginationbody,
+  .rezultatibody,
+  .rasporedbody,
+  .prijavabody {
     position: relative;
     overflow-x: hidden;
   }
@@ -268,7 +261,7 @@
   padding-bottom: 20px;
 }
 .nasl {
-  font-size: 60px;
+  font-size: 65px;
   padding-bottom: 30px;
   padding-top: 30px;
 }

@@ -4,13 +4,14 @@ import Header1 from "../components/header1"
 import Post from "../components/Post"
 import PaginationLinks from "../components/pagination-links"
 import Filter from "../components/blogfilter"
+import Footer2 from "../components/footer2"
 
 const Pagination = props => {
   const posts = props.data.allMarkdownRemark.edges
   const { currentPage, numberOfPages } = props.pageContext
 
   return (
-    <div>
+    <div className="paginationbody">
       <Header1 />
       <Filter />
       <div className="svi-postovi">
@@ -32,6 +33,7 @@ const Pagination = props => {
         currentPage={currentPage}
         numberOfPages={numberOfPages}
       />
+      <Footer2 />
     </div>
   )
 }
