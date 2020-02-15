@@ -73,90 +73,6 @@
 .myButton2 {
   display: none;
 }
-/*
-@media only screen and (max-width: 801px) {
-  html {
-    overflow-x: hidden;
-  }
-  .header-right {
-    position: absolute;
-    right: 0px;
-    padding-bottom: 20px;
-    top: 74px;
-    background-color: rgb(20, 20, 20);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    z-index: 1;
-    transform: translateX(100%);
-  }
-  .linkovi {
-    padding: 15px;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-  .myButton2 {
-    background-color: #d62e00;
-    border: none;
-    color: #c9c6c6;
-    padding: 3px 26px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    box-shadow: inset 0px 1px 0px 0px #3a0707;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-
-  .header-right {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .myButton {
-    display: none;
-  }
-}
-*/
-/*PRAVI GUMB PRIJAVI SE*/
-/*
-@media only screen and (max-width: 801px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-  .header-right {
-    position: absolute;
-    right: 0px;
-    padding-bottom: 20px;
-    top: 74px;
-    background-color: rgb(20, 20, 20);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%;
-    height: 50%;
-    z-index: 1;
-    transform: translateX(100%);
-  }
-  .linksinheader {
-    display: flex;
-    flex-direction: column;
-  }
-  .myButton {
-    padding: 5px 21px;
-  }
-}
-.linksinheader-active {
-  transform: translateX(0%);
-  opacity: 1;
-}*/
 
 @media only screen and (max-width: 830px) {
   .indexbody,
@@ -249,7 +165,8 @@
 
 .textonphoto {
   position: absolute;
-  top: 40%;
+  width: 100%;
+  top: 45%;
   left: 50%;
   font-size: 40px;
   font-weight: bold;
@@ -261,11 +178,15 @@
   padding-bottom: 20px;
 }
 .nasl {
-  font-size: 65px;
+  font-size: 75px;
+  margin-bottom: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+.datumkviza {
+  font-size: 45px;
+}
 .buttonmore {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   display: inline-block;
@@ -315,13 +236,15 @@
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-footer {
-  height: 120px;
+.sponzori {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 80px;
   text-align: center;
-}
-
-footer h1 {
-  padding: 20px;
+  font-size: 55px;
+  font-weight: bold;
+  margin-top: 30px;
+  font-style: oblique;
 }
 
 #container {
@@ -597,7 +520,7 @@ footer h1 {
   width: 50%;
   font-family: "Calibri", "Trebuchet MS", sans-serif;
   padding-top: 20px;
-  color: #2e4849;
+  color: #233030;
 }
 .onama h1 {
   margin-top: 1.25rem;
@@ -739,9 +662,6 @@ footer h1 {
   .header {
     padding-left: 5px;
   }
-  .linksinheader {
-    /*display: none;*/
-  }
 }
 
 .blog-post {
@@ -788,23 +708,48 @@ footer h1 {
 }
 
 .butt {
-  background: linear-gradient(to bottom, #33bdef 1%, #019ad2 100%);
-  background-color: #68c5e7;
+  background: linear-gradient(to bottom, #80c9e4 1%, #30abd8 100%);
+  background-color: #84cfeb;
   border-radius: 9px;
-  border: 2px solid #30afb8;
+  border: 1px solid #30afb8;
   display: inline-block;
   cursor: pointer;
   font-family: Arial;
   font-size: 15px;
   font-weight: bold;
-  padding: 5px 40px;
+  padding: 5px 45px;
+}
+
+.butt-odustani {
+  color: rgb(63, 63, 63);
+  background: linear-gradient(to bottom, #dfe7ce 5%, #a5ad9f 100%);
+  background-color: #dbe6c4;
+  border-radius: 6px;
+  border: 1px solid #c4c7c2;
+  text-shadow: 0px 1px 0px #ced9bf;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 38px;
   margin-top: 30px;
   margin-right: 20px;
+  margin-bottom: 30px;
+}
+.butt-odustani:hover {
+  box-shadow: 0 12px 10px 0 #e4e3e3, 0 10px 40px 0 #d6d5d5;
+  background-color: #c2c4c0;
+  color: rgb(48, 47, 47);
 }
 
 .butt:hover {
   color: white;
-  box-shadow: 0 12px 10px 0 #d6d5d5, 0 10px 40px 0 #d6d5d5;
+  box-shadow: 0 12px 10px 0 #e2e1e1, 0 10px 40px 0 #d6d5d5;
+}
+
+.buttonsPrijava {
+  margin-bottom: 30px;
 }
 .dropbtn {
   padding: 13px;
@@ -882,23 +827,14 @@ footer h1 {
 
 @media only screen and (max-width: 843px) {
   .textonphoto {
-    margin-top: 25px;
+    margin-top: 10px;
   }
   .nasl {
-    font-size: 55px;
+    font-size: 65px;
   }
 }
-@media only screen and (max-width: 773px) {
-  .nasl {
-    font-size: 50px;
-  }
-}
-@media only screen and (max-width: 760px) {
-  .nasl {
-    font-size: 45px;
-    padding-top: 100px;
-  }
 
+@media only screen and (max-width: 760px) {
   .buttonmore {
     margin: 0;
   }
@@ -908,21 +844,15 @@ footer h1 {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 752px) {
   .nasl {
-    font-size: 45px;
-    padding-top: 50px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .nasl {
-    font-size: 45px;
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 700px) {
   .nasl {
-    font-size: 45px;
+    font-size: 55px;
     padding-top: 10px;
   }
   .buttonprijavise {
@@ -946,10 +876,7 @@ footer h1 {
   .onama {
     font-size: 16px;
   }
-  .nasl {
-    font-size: 40px;
-    margin-bottom: 0;
-  }
+
   .datumkviza {
     font-size: 35px;
   }
@@ -959,24 +886,21 @@ footer h1 {
   .buttonmore {
     padding: 7px 20px;
   }
-}
-
-@media only screen and (max-width: 620px) {
-  .buttonsonphoto {
-    width: 320px;
+  .nasl {
+    font-size: 50px;
   }
 }
 
 @media only screen and (max-width: 541px) {
   .nasl {
-    font-size: 37px;
     margin-top: 20px;
   }
   .datumkviza {
     font-size: 30px;
+
+    margin-bottom: 10px;
   }
   .buttonsonphoto {
-    width: 320px;
     margin-bottom: 20px;
   }
   .buttonmore {
@@ -989,14 +913,14 @@ footer h1 {
 }
 @media only screen and (max-width: 515px) {
   .nasl {
-    font-size: 35px;
+    font-size: 45px;
     margin-top: 27px;
   }
   .datumkviza {
     font-size: 30px;
+    margin-bottom: 10px;
   }
   .buttonsonphoto {
-    width: 320px;
     margin-bottom: 24px;
   }
   .buttonmore {
@@ -1011,17 +935,13 @@ footer h1 {
 }
 @media only screen and (max-width: 476px) {
   .buttonsonphoto {
-    width: 320px;
     margin-bottom: 29px;
   }
   .buttonmore {
     font-size: 14px;
-    padding: 6px 20px;
   }
 
   .buttonprijavise {
-    font-size: 14px;
-    padding: 6px 16px;
     margin-left: 5px;
   }
 }
@@ -1031,10 +951,10 @@ footer h1 {
     padding: 0;
     margin-top: 0;
   }
-  .buttonsonphoto {
-    width: 320px;
-    margin-bottom: 0px;
+  .nasl {
+    margin-top: 37px;
   }
+
   .buttonmore {
     font-size: 14px;
     padding: 6px 20px;
@@ -1048,17 +968,15 @@ footer h1 {
   }
 }
 @media only screen and (max-width: 453px) {
-  .nasl {
-    font-size: 33px;
-    margin-top: 27px;
-  }
   .datumkviza {
     font-size: 28px;
     padding-bottom: 2px;
   }
+  .nasl {
+    padding-bottom: 15px;
+  }
 
   .buttonsonphoto {
-    width: 320px;
     margin-bottom: 5px;
   }
 
@@ -1080,7 +998,7 @@ footer h1 {
     margin-top: 6px;
   }
   .nasl {
-    font-size: 31px;
+    font-size: 39px;
     margin-top: 0px;
   }
 
@@ -1089,37 +1007,28 @@ footer h1 {
     margin-bottom: 2px;
   }
 
-  .buttonsonphoto {
-    width: 320px;
-    margin-bottom: 0px;
-  }
-
   .buttonmore {
     font-size: 12px;
     padding: 5px 15px;
-    margin-left: 10px;
   }
 
   .buttonprijavise {
     font-size: 12px;
     padding: 5px 14px;
-    margin-left: 5px;
   }
 }
 
-@media only screen and (max-width: 386px) {
+@media only screen and (max-width: 390px) {
   .nasl {
-    font-size: 30px;
-    margin-top: 0px;
+    font-size: 35px;
+    margin-bottom: 1px;
   }
   .datumkviza {
     font-size: 22px;
     margin-bottom: 2px;
   }
-
-  .buttonsonphoto {
-    width: 320px;
-    margin-bottom: 0px;
+  .textonphoto p {
+    padding-bottom: 10px;
   }
 
   .buttonmore {
@@ -1160,6 +1069,9 @@ footer h1 {
   }
 }
 @media only screen and (max-width: 322px) {
+  .textonphoto {
+    margin-top: 20px;
+  }
   .nasl {
     font-size: 28px;
     margin-top: 0px;
@@ -1169,11 +1081,6 @@ footer h1 {
     margin-bottom: 0px;
     padding: 0;
     padding-bottom: 0;
-  }
-
-  .buttonsonphoto {
-    width: 320px;
-    margin-bottom: 0px;
   }
 
   .buttonmore {
@@ -1362,4 +1269,18 @@ footer h1 {
   .contactus {
     font-size: 13px;
   }
+}
+
+.prijavaTinel {
+  display: flex;
+  justify-content: center;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+.divuprijavi {
+  display: flex;
+  justify-content: space-between;
+}
+.divuprijavi > * {
+  display: flex;
+  margin-left: 30px;
 }

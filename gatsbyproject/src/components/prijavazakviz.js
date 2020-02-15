@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "gatsby"
 const defaultState = {
   name: "",
   imetima: "",
@@ -96,13 +96,15 @@ class MyForm extends React.Component {
     if (isValid) {
       console.log(this.state)
       this.setState(defaultState)
+      alert("Prijava je uspješno izvršena")
+      window.location.replace("/")
     }
   }
 
   render() {
     return (
-      <div>
-        <form name="Login" className="prijava">
+      <div className="prijavaforma">
+        <form name="Login" className="prijava" style={{ margin: 0 }}>
           <input
             type="text"
             name="name"
@@ -160,15 +162,22 @@ class MyForm extends React.Component {
           <div style={{ fontSize: 15, color: "red" }}>
             {this.state.emailError}
           </div>
+          <div className="buttonsPrijava">
+            <Link to="/">
+              <button type="button" className="butt-odustani" label="Odustani ">
+                Odustani
+              </button>
+            </Link>
 
-          <button
-            type="button"
-            className="butt"
-            label="Pošalji "
-            onClick={this.onSubmit}
-          >
-            Pošalji
-          </button>
+            <button
+              type="button"
+              className="butt"
+              label="Pošalji "
+              onClick={this.onSubmit}
+            >
+              Pošalji
+            </button>
+          </div>
         </form>
       </div>
     )
