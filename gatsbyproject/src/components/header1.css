@@ -695,16 +695,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
+}
+.prijava2 {
+  font-family: "Calibri", "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-left: 25px;
+  margin-bottom: 20px;
   margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .box {
-  margin-top: 13px;
+  margin-top: 10px;
   padding: 10px;
-  width: 250px;
-  height: 40px;
-  box-shadow: 2px 2px 2px #e4e3e3;
+  width: 300px;
+  height: 45px;
+  border: 1.3px solid darkgrey;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .butt {
@@ -722,8 +733,8 @@
 
 .butt-odustani {
   color: rgb(63, 63, 63);
-  background: linear-gradient(to bottom, #dfe7ce 5%, #a5ad9f 100%);
-  background-color: #dbe6c4;
+  background: linear-gradient(to bottom, #dfe7ce 5%, #aeafad 100%);
+  background-color: #e0e2db;
   border-radius: 6px;
   border: 1px solid #c4c7c2;
   text-shadow: 0px 1px 0px #ced9bf;
@@ -750,6 +761,7 @@
 
 .buttonsPrijava {
   margin-bottom: 30px;
+  margin-top: 16px;
 }
 .dropbtn {
   padding: 13px;
@@ -1279,6 +1291,8 @@
 .divuprijavi {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .divuprijavi > * {
   display: flex;

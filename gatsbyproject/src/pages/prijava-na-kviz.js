@@ -13,7 +13,7 @@ const Prijava = () => (
   <div className="prijavabody">
     <Header1></Header1>
 
-    <h2 className="prijava">Prijava na pub kviz Tinel</h2>
+    <div className="prijava2">PRIJAVA ZA PUB QUIZ TINEL</div>
     <div className="prijavaTinel">
       <div className="divuprijavi">
         <div className="lokacija2">
