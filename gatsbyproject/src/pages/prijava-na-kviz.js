@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from "../components/seo"
 import Header1 from "../components/header1"
 import MyForm from "../components/prijavazakviz"
 import Footer2 from "../components/footer2"
@@ -11,7 +12,9 @@ function obavijest(){
 
 const Prijava = () => (
   <div className="prijavabody">
-    <Header1></Header1>
+    <Header1>
+      <SEO title="Prijava za kviz" />
+    </Header1>
 
     <div className="prijava2">PRIJAVA ZA PUB QUIZ TINEL</div>
     <div className="prijavaTinel">

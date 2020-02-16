@@ -8,14 +8,14 @@ import Footer2 from "../components/footer2"
 const tagPosts = ({ data, pageContext }) => {
   const { tag } = pageContext
   const { totalCount } = data.allMarkdownRemark
-  const pageHeader = `TEMA: ${tag}`
+  const pageHeader = `TEMA: ${tag == "izvjestaj" ? "izvještaj" : tag}`
 
   return (
     <div className="blogbody">
       <Header1>
         <SEO title="Blog" />
       </Header1>
-      <h3>{pageHeader}</h3>
+      <div className="naslovteme">{pageHeader}</div>
       <div className="svi-postovi">
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Post

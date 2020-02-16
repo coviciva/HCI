@@ -39,7 +39,7 @@ const Filter = () => {
           {data.allMarkdownRemark.group.map(tag => (
             <li key={tag.fieldValue}>
               <Link to={`/tags/${slugify(tag.fieldValue)}`}>
-                {tag.fieldValue}
+                {tag.fieldValue == "izvjestaj" ? "izvještaj" : tag.fieldValue}
               </Link>
             </li>
           ))}

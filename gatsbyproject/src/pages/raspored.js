@@ -9,27 +9,27 @@ const raspored = [
   {
     naslov: "PUB QUIZ: TINEL",
     lokacija: "Cvite Fiskovića 3, Split",
-    datum: "28. prosinca, 19:30",
+    datum: "20. veljače, 19:30",
   },
   {
     naslov: "PUB QUIZ: RETRO",
     lokacija: "Ruđera Boškovića 23, Split",
-    datum: "29. prosinca, 19:30",
+    datum: "22. veljače, 19:30",
   },
   {
     naslov: "PUB QUIZ: DOMAĆIN",
     lokacija: "Cvite Fiskovića 3, Split",
-    datum: "1. veljače, 19:30",
+    datum: "26. veljače, 19:30",
   },
   {
-    naslov: "PUB QUIZ: LATINA",
-    lokacija: "Kralja Tomislava 2, Trilj",
-    datum: "2. veljače, 20:00",
+    naslov: "PUB QUIZ: MALA KAVANA",
+    lokacija: "Ruđera Boškovića 13, Split",
+    datum: "27. veljače, 20:00",
   },
   {
     naslov: "PUB QUIZ: DREAMERS",
     lokacija: "Prima 3, Split",
-    datum: "25. veljače, 19:30",
+    datum: "1. ožujka, 19:30",
   },
 ]
 

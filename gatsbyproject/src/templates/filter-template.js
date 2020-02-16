@@ -18,8 +18,7 @@ const Filter = ({ data, pageContext }) => {
       <Header1>
         <SEO title="Blog" />
       </Header1>
-      <h3>TEMA:</h3>
-      <h3>{concatarray(taglist)}</h3>
+
       {/*<Link to={concatarray(taglist)}>Link</Link>*/}
       <div className="svi-postovi">
         {data.allMarkdownRemark.edges.map(({ node }) => (

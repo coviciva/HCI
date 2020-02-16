@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Header1 from "../components/header1"
 import { Link } from "gatsby"
 import ArrowLink from "../components/arrow"
+import Footer2 from "../components/footer2"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -34,6 +35,7 @@ export default function Template({
           <ArrowLink />
         </div>
       </div>
+      <Footer2 />
     </div>
   )
 }
